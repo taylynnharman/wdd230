@@ -1,0 +1,27 @@
+.content {
+  max-width: 1600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.prodiv {
+  display: flex;
+  width: 600px;
+  text-align: center;
+  background-color: #326273;
+  color: aliceblue;
+}
+.profile {
+  width: 200px;
+  padding: 30px;
+}
+.name {
+  padding: 30px;
+  padding-top: 80px;
+}
+.footer {
+  text-align: center;
+  background-color: #326273;
+  font-size: 13px;
+  color: aliceblue;
+}
