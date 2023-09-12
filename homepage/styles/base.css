@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+  font-family: montserrat;
+}
+
+header {
+  font-family: libre baskerville;
+  background: #e2d1c3;
+  padding: 2rem;
+  grid-row: 1 / 2;
+}
+
+h3 {
+  background: #e2d1c3;
+}
+img {
+  width: 25%;
+}
+
+main {
+  grid-row: 2 / 3;
+}
+#card {
+}
+footer {
+  background: #e2d1c3;
+  grid-row: 3 / 4;
+}
