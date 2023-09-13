@@ -1,31 +1,62 @@
+/*font-family: libre baskerville; and montserrat*/
+
 body {
-  display: grid;
+  display: grid !important;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto auto;
   height: 100vh;
-  grid-template-rows: auto 1fr auto;
-  text-align: center;
-  font-family: montserrat;
+  margin: 0;
 }
 
 header {
-  font-family: libre baskerville;
-  background: #e2d1c3;
+  background: #326273;
+  color: #fcbf49;
   padding: 2rem;
-  grid-row: 1 / 2;
 }
 
-h3 {
-  background: #e2d1c3;
-}
 img {
-  width: 25%;
+  width: 20%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+h1 {
+  grid-column: 2 / 3;
+}
+
+nav ul {
+  list-style: none; /* Remove default list styles */
+  padding: 200px; /* Remove default padding */
+  display: flex; /* Make the list items a flex container for horizontal layout */
+}
+
+nav a {
+  text-decoration: none; /* Remove underlines from links */
+  color: white; /* Set link color */
+  font-weight: bold; /* Optionally, make the links bold */
+}
+nav a:hover {
+  background: white;
+  color: #326273;
+}
+h2 {
+  color: #c7a135;
+}
+h3 {
+  background: #326273;
+  color: white;
+  padding-left: 30px;
 }
 
 main {
   grid-row: 2 / 3;
+  padding: 30px;
 }
 #card {
 }
+/*change footer background and font color*/
 footer {
-  background: #e2d1c3;
-  grid-row: 3 / 4;
+  background: #326273;
+  color: white;
+  grid-row: 3/4;
+  text-align: center;
 }
