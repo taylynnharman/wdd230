@@ -12,7 +12,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background: #326273;
-  color: #fcbf49;
+  color: white;
   font-family: "Sawarabi Mincho";
 }
 
@@ -50,7 +50,7 @@ nav li {
   display: block;
 }
 h2 {
-  color: #c7a135;
+  color: #326273;
   text-align: center;
   border-bottom: 2px solid #326273; /* Change the color and thickness as needed */
   padding-bottom: 5px; /* Adjust the space between the text and the line as needed */
@@ -83,7 +83,7 @@ main {
   color: #326273;
 }
 .activities a:hover {
-  color: #c7a135;
+  color: #fcbf49;
 }
 /*change footer background and font color*/
 footer {
