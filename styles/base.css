@@ -1,57 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi Mincho:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
 /*font-family: libre baskerville; and montserrat*/
 
 body {
-  display: grid !important;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr auto auto;
   height: 100vh;
   margin: 0;
+  font-family: "Quicksand";
 }
 
 header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   background: #326273;
   color: #fcbf49;
-  padding: 2rem;
+  font-family: "Sawarabi Mincho";
 }
 
 img {
-  width: 20%;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-h1 {
+  width: 35%;
   grid-column: 2 / 3;
+  padding: 20px;
+}
+
+h1 {
+  grid-column: 3 / 4;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
   list-style: none; /* Remove default list styles */
   padding: 200px; /* Remove default padding */
-  display: flex; /* Make the list items a flex container for horizontal layout */
 }
 
 nav a {
+  display: block; /* list vertically */
   text-decoration: none; /* Remove underlines from links */
-  color: white; /* Set link color */
+  color: #326273; /* Set link color */
   font-weight: bold; /* Optionally, make the links bold */
+  text-align: center;
+  font-size: 14pt;
+  padding: 10px;
 }
 nav a:hover {
-  background: white;
-  color: #326273;
+  background: #326273;
+  color: white;
+}
+nav li {
+  display: block;
 }
 h2 {
   color: #c7a135;
+  text-align: center;
+  border-bottom: 2px solid #326273; /* Change the color and thickness as needed */
+  padding-bottom: 5px; /* Adjust the space between the text and the line as needed */
+  font-family: "Sawarabi Mincho";
 }
+
 h3 {
   background: #326273;
   color: white;
-  padding-left: 30px;
+  text-align: center;
+  margin-top: 0;
 }
 
 main {
-  grid-row: 2 / 3;
-  padding: 30px;
+  display: grid;
+  padding-inline: 40px;
 }
-#card {
+.card {
+  text-align: center;
+  border: 1px solid #326273;
+  color: #326273;
+  margin-bottom: 20px;
+}
+.activities li {
+  text-align: left;
+  list-style-type: decimal-leading-zero;
+  color: #326273;
+}
+.activities a {
+  color: #326273;
+}
+.activities a:hover {
+  color: #c7a135;
 }
 /*change footer background and font color*/
 footer {
@@ -59,4 +91,5 @@ footer {
   color: white;
   grid-row: 3/4;
   text-align: center;
+  padding: 15px;
 }
