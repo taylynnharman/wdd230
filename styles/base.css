@@ -16,6 +16,11 @@ header {
   font-family: "Sawarabi Mincho";
 }
 
+.image {
+  text-align: right;
+  display: inline-block;
+}
+
 img {
   width: 150px;
   grid-column: 2 / 3;
