@@ -9,8 +9,8 @@
     width: 80%;
   }
   img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     grid-column: 2 / 3;
     padding: 15px;
   }
