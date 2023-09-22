@@ -1,48 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi Mincho:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Mincho&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
 /*font-family: libre baskerville; and montserrat*/
-
 body {
   height: 100vh;
   margin: 0;
   font-family: "Quicksand";
 }
-
 header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background: #326273;
   color: white;
-  font-family: "Sawarabi Mincho";
+  font-family: "Sawarabi Mincho", serif;
 }
-
 .image {
   text-align: right;
   display: inline-block;
 }
-
 img {
   width: 150px;
   grid-column: 2 / 3;
   padding: 20px;
 }
-
 h1 {
   grid-column: 3 / 4;
   display: flex;
   align-items: center;
 }
-
-nav ul {
-  list-style: none; /* Remove default list styles */
-  padding: 200px; /* Remove default padding */
-}
-
 nav a {
-  display: block; /* list vertically */
+  display: block;
+  /* list vertically */
   text-decoration: none; /* Remove underlines from links */
   color: #326273; /* Set link color */
-  font-weight: bold; /* Optionally, make the links bold */
+  font-weight: bold; /* Optionally, make the
+links bold */
   text-align: center;
   font-size: 14pt;
   padding: 10px;
@@ -51,24 +42,22 @@ nav a:hover {
   background: #326273;
   color: white;
 }
-nav li {
-  display: block;
-}
 h2 {
   color: #326273;
   text-align: center;
-  border-bottom: 2px solid #326273; /* Change the color and thickness as needed */
-  padding-bottom: 5px; /* Adjust the space between the text and the line as needed */
+  border-bottom: 2px solid #326273; /* Change the
+color and thickness */
+  padding-bottom: 5px; /* Adjust the space
+between the text and the line */
   font-family: "Sawarabi Mincho";
 }
-
 h3 {
   background: #326273;
   color: white;
   text-align: center;
   margin-top: 0;
+  background-size: 20px;
 }
-
 main {
   display: grid;
   padding-inline: 40px;
@@ -78,6 +67,7 @@ main {
   border: 1px solid #326273;
   color: #326273;
   margin-bottom: 20px;
+  border-top-style: none;
 }
 .activities li {
   text-align: left;
