@@ -14,9 +14,10 @@ header {
   font-family: "Sawarabi Mincho", serif;
 }
 img {
-  width: 130px;
+  width: 100px;
+  height: 100px;
   grid-column: 2 / 3;
-  padding: 15px;
+  padding: 20px;
 }
 h1 {
   grid-column: 3 / 4;

@@ -8,6 +8,12 @@
     grid-gap: 20px;
     width: 80%;
   }
+  img {
+    width: 130px;
+    height: 130px;
+    grid-column: 2 / 3;
+    padding: 15px;
+  }
   h2 {
     grid-column: 1/3;
   }
