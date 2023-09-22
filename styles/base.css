@@ -13,14 +13,10 @@ header {
   color: white;
   font-family: "Sawarabi Mincho", serif;
 }
-.image {
-  text-align: right;
-  display: inline-block;
-}
 img {
-  width: 150px;
+  width: 130px;
   grid-column: 2 / 3;
-  padding: 20px;
+  padding: 10px;
 }
 h1 {
   grid-column: 3 / 4;
