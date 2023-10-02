@@ -49,6 +49,7 @@ main {
 }
 
 .card {
+  box-sizing: border-box;
   text-align: center;
   border: 1px solid #326273;
   color: #326273;
@@ -129,3 +130,4 @@ iframe {
   width: 100%;
   padding-bottom: 20px;
 }
+
