@@ -46,6 +46,7 @@ h3 {
 main {
   display: grid;
   padding-inline: 40px;
+  max-width: 1000px;
 }
 
 .card {
