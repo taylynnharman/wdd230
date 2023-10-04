@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@800&display=swap");
 
+:root {
+  --main-color: #326273;
+  --nav-color: #3c3c39;
+  --text-color: white;
+}
 /*font-family: libre baskerville; and montserrat*/
 body {
   height: 100vh;
@@ -9,7 +14,7 @@ body {
 header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: #326273;
+  background: var(--main-color);;
   color: white;
   font-family: "Raleway", sans-serif;
 }
@@ -23,6 +28,7 @@ img {
 .active::before {
 	content: "📍 ";
 }
+
 h1 {
   grid-column: 2 / 4;
   display: flex;
@@ -31,15 +37,15 @@ h1 {
 }
 
 h2 {
-  color: #326273;
+  color: var(--main-color);;
   text-align: center;
-  border-bottom: 2px solid #326273; /* Change the color and thickness */
+  border-bottom: 2px solid var(--main-color);; /* Change the color and thickness */
   padding-bottom: 5px; /* Adjust the space between the text and the line */
   font-family: "Raleway", sans-serif;
   grid-column: 1 / 3;
 }
 h3 {
-  background: #326273;
+  background: var(--main-color);;
   color: white;
   text-align: center;
   margin-top: 0;
@@ -50,36 +56,42 @@ main {
   max-width: 1000px;
 }
 
+/* Card styles */
+
 .card {
-  box-sizing: border-box;
   text-align: center;
-  border: 1px solid #326273;
-  color: #326273;
+  border: 1px solid var(--main-color);;
+  color: var(--main-color);;
   margin-bottom: 20px;
-  border-top-style: none;
   grid-column: 1 / 3;
 }
 
-.activities li {
+.card li {
   text-align: left;
   list-style-type: decimal-leading-zero;
 }
-.activities a {
-  color: #326273;
+.card a {
+  color: var(--main-color);
+  padding-left:10px;
 }
-.activities a:hover {
+.card a:hover {
   color: #fcbf49;
 }
-/*change footer background and font color*/
+.card.ul{
+  list-style-position: inside;
+}
+
 footer {
-  background: #326273;
+  background: var(--main-color);;
   color: white;
   grid-row: 3/4;
   text-align: center;
   padding: 15px;
 }
+/* Responsive Menu styles */
+
 #menu{
-  background-color: #326273;
+  background-color: var(--main-color);;
   color:white;
   padding: 3px 7px 6px;
   font-size: 2rem;
@@ -89,6 +101,7 @@ footer {
   top:1.2rem;
   border-color:white;
 }
+
 #menu::before {
 	content: "☰";
 }
@@ -97,36 +110,53 @@ footer {
 	content: "x";
   color: white;
 }
+/* nav styles */
+.navigation{
+  background-color: #222;
+  line-height: 3em;
+  font-size: 1.2em;
+  list-style-type: none;
+  color: white;
+  margin-top: 0;
+  padding-left:0;
+  display: flex;
+	flex-direction: column;
+}
+/* Hide navigation */
 .navigation li {
 	display: none;
 }
-.navigation{
-  color: #326273;
-}
+
 .navigation a{
   display: block; /* list vertically */
   text-decoration: none; /* Remove underlines from links */
-  color: #326273; /* Set link color */
-  font-weight: bold; /* Make the links bold */
+  color: white; 
+  font-weight: bold; 
   text-align: center;
   font-size: 14pt;
   padding: 10px;
+  display: none;
 }
-.navigation a:hover{
-  background: #326273;
-  color: white;
+.navigation.ul{
+  padding-left: 0;
+}
+.navigation li a:hover {
+  color: var(--main-color);;
+  background: white;
   font-weight: 700;
 }
-.navigation li {
-	display: none;
-}
+
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
 	display: block;
 	width: 100%;
 }
+
 .open li a {
 	display: block;
 }
+/* Google Map */
 iframe {
   grid-column: 1 / 3;
   width: 100%;

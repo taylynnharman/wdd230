@@ -7,6 +7,12 @@
     width: 80%;
     grid-column-gap: 20px;
   }
+  .navigation li {
+		display: block;
+	}
+  .navigation {
+    display:flex;
+	}
   h1 {
     grid-column: 3 / 4;
     display: flex;
@@ -19,33 +25,11 @@
     height:100px;
     padding-left:150px;
   }
-  nav li,
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  nav a {
-    margin-inline: 20px;
-  }
-  .navigation {
-    display: flex;
-	}
-
-	.navigation li {
-		flex: 1 1 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-	}
-  .navigation a {
-		text-align: center;
-	}
-  #menu {
+    /* #menu {
     display:none;
-  }
+  } */
   .card{
     grid-column: auto;
   }
+  
 }
