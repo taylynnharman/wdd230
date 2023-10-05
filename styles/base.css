@@ -5,28 +5,32 @@
   --nav-color: #3c3c39;
   --text-color: white;
 }
+
 /*font-family: libre baskerville; and montserrat*/
 body {
   height: 100vh;
   margin: 0;
   font-family: "Libre Baskerville", serif;
 }
+
 header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: var(--main-color);;
+  background: var(--main-color);
+  ;
   color: white;
   font-family: "Raleway", sans-serif;
 }
+
 img {
   grid-column: 1 / 2;
   padding: 20px;
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
 }
 
 .active::before {
-	content: "📍 ";
+  content: "📍 ";
 }
 
 h1 {
@@ -37,19 +41,26 @@ h1 {
 }
 
 h2 {
-  color: var(--main-color);;
+  color: var(--main-color);
+  ;
   text-align: center;
-  border-bottom: 2px solid var(--main-color);; /* Change the color and thickness */
-  padding-bottom: 5px; /* Adjust the space between the text and the line */
+  border-bottom: 2px solid var(--main-color);
+  ;
+  /* Change the color and thickness */
+  padding-bottom: 5px;
+  /* Adjust the space between the text and the line */
   font-family: "Raleway", sans-serif;
   grid-column: 1 / 3;
 }
+
 h3 {
-  background: var(--main-color);;
+  background: var(--main-color);
+  ;
   color: white;
   text-align: center;
   margin-top: 0;
 }
+
 main {
   display: grid;
   padding-inline: 40px;
@@ -60,8 +71,10 @@ main {
 
 .card {
   text-align: center;
-  border: 1px solid var(--main-color);;
-  color: var(--main-color);;
+  border: 1px solid var(--main-color);
+  ;
+  color: var(--main-color);
+  ;
   margin-bottom: 20px;
   grid-column: 1 / 3;
 }
@@ -70,96 +83,108 @@ main {
   text-align: left;
   list-style-type: decimal-leading-zero;
 }
+
 .card a {
   color: var(--main-color);
-  padding-left:10px;
+  padding-left: 10px;
 }
+
 .card a:hover {
   color: #fcbf49;
 }
-.card.ul{
+
+.card.ul {
   list-style-position: inside;
 }
 
 footer {
-  background: var(--main-color);;
+  background: var(--main-color);
+  ;
   color: white;
   grid-row: 3/4;
   text-align: center;
   padding: 15px;
 }
+
 /* Responsive Menu styles */
 
-#menu{
-  background-color: var(--main-color);;
-  color:white;
+#menu {
+  background-color: var(--main-color);
+  ;
+  color: white;
   padding: 3px 7px 6px;
   font-size: 2rem;
   width: 50px;
   position: absolute;
-	right: 1rem;  
-  top:1.2rem;
-  border-color:white;
+  right: 1rem;
+  top: 1.2rem;
+  border-color: white;
 }
 
 #menu::before {
-	content: "☰";
+  content: "☰";
 }
 
 #menu.open::before {
-	content: "x";
+  content: "x";
   color: white;
 }
+
 /* nav styles */
-.navigation{
+.navigation {
   background-color: #222;
   line-height: 3em;
   font-size: 1.2em;
   list-style-type: none;
   color: white;
   margin-top: 0;
-  padding-left:0;
+  padding-left: 0;
   display: flex;
-	flex-direction: column;
-}
-/* Hide navigation */
-.navigation li {
-	display: none;
+  flex-direction: column;
 }
 
-.navigation a{
-  display: block; /* list vertically */
-  text-decoration: none; /* Remove underlines from links */
-  color: white; 
-  font-weight: bold; 
+/* Hide navigation
+.navigation li {
+	display: none;
+} */
+
+.navigation a {
+  display: block;
+  /* list vertically */
+  text-decoration: none;
+  /* Remove underlines from links */
+  color: white;
+  font-weight: bold;
   text-align: center;
   font-size: 14pt;
   padding: 10px;
-  display: none;
 }
-.navigation.ul{
+
+.navigation.ul {
   padding-left: 0;
 }
+
 .navigation li a:hover {
-  color: var(--main-color);;
+  color: var(--main-color);
+  ;
   background: white;
   font-weight: 700;
 }
 
 
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+/* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
 .open li {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .open li a {
-	display: block;
+  display: block;
 }
+
 /* Google Map */
 iframe {
   grid-column: 1 / 3;
   width: 100%;
   padding-bottom: 20px;
 }
-

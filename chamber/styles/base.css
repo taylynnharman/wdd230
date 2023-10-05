@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@800&display=swap");
+
+:root {
+  --primary-color: #3c3c39;
+  --secondary-color: #2f4d68;
+  --accent1-color: #4487ae;
+  --text-color: white;
+  --heading-font: "Raleway", "PT Serif", "Lato";
+  --paragraph-font: "Libre Baskerville", "Tahoma", "verdana";
+}
+body{
+    font-family: var(--paragraph-font);
+}
+nav{
+    background:var(--primary-color);
+}
+nav a {
+    color:var(--text-color);
+    font-family: var(--heading-font);
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding:20px;
+    font-size: 10pt;
+}
+
+#copy {
+    text-align: center;
+    font-size: 8pt;
+}
