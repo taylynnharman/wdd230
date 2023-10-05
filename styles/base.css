@@ -143,10 +143,9 @@ footer {
   flex-direction: column;
 }
 
-/* Hide navigation
 .navigation li {
-	display: none;
-} */
+  display: none;
+}
 
 .navigation a {
   display: block;
