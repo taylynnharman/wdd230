@@ -1,0 +1,19 @@
+@media screen and (min-width: 600px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #hero {
+        width: max-content;
+    }
+}

@@ -1,28 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@800&display=swap");
 
 :root {
-  --primary-color: #3c3c39;
-  --secondary-color: #2f4d68;
-  --accent1-color: #4487ae;
-  --text-color: white;
-  --heading-font: "Raleway", "PT Serif", "Lato";
-  --paragraph-font: "Libre Baskerville", "Tahoma", "verdana";
+    --primary-color: #3c3c39;
+    --secondary-color: #2f4d68;
+    --accent1-color: #4487ae;
+    --text-color: white;
+    --heading-font: "Raleway", "PT Serif", "Lato";
+    --paragraph-font: "Libre Baskerville", "Tahoma", "verdana";
 }
-body{
+
+body {
     font-family: var(--paragraph-font);
 }
-nav{
-    background:var(--primary-color);
+
+#hero {
+    width: 200px;
 }
-nav a {
-    color:var(--text-color);
+
+#menu {
+    background-color: var(--main-color);
+    ;
+    color: white;
+    padding: 3px 7px 6px;
+    font-size: 2rem;
+    width: 50px;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    border-color: white;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+    color: white;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    line-height: 3em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px;
     font-family: var(--heading-font);
+    text-decoration: none;
+}
+
+.navigation.ul {
+    padding-left: 0;
+}
+
+.navigation li a:hover {
+    color: var(--accent1-color);
+    background: var(--text-color);
+    font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
 }
 
 footer {
     background: var(--secondary-color);
     color: var(--text-color);
-    padding:20px;
+    padding: 20px;
     font-size: 10pt;
 }
 
