@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@800&display=swap");
 
 :root {
@@ -29,11 +28,27 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
 img {
   display: block;
   margin: 0 auto;
   width: 50%;
 }
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section>div {
+  text-align: center;
+}
+
+section>div>img {
+  width: 75%;
+}
+
+
 h1,
 h2,
 h3,
@@ -43,22 +58,26 @@ h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
+
 h2 {
   text-align: center;
 }
+
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
 header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1,
-header > h2 {
+
+header>h1,
+header>h2 {
   color: var(--headline-color-on-color);
 }
 
@@ -67,15 +86,18 @@ p {
   color: var(--paragraph-color);
   padding: 1em;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
   text-align: center;
 }
+
 .colors th {
   background-color: #999;
 }
+
 .colors td {
   width: 20%;
   height: 3em;
@@ -83,15 +105,17 @@ p {
 
 .primary {
   background-color: #3c3c39;
-  color:white;
+  color: white;
 }
+
 .secondary {
   background-color: #2f4d68;
-  color:white;
+  color: white;
 }
+
 .accent1 {
   background-color: #4487ae;
-  color:white;
+  color: white;
 }
 
 p.colored {
@@ -114,49 +138,56 @@ nav a {
   text-decoration: none;
   padding: 10px;
 }
+
 nav a:link,
 nav a:visited {
   color: var(--nav-link-color);
 }
+
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
 
 .sitemap {
-    display: grid;
-    grid-template-columns: repeat(8, 10%);
-    grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas:
-        ". . . home home . . ."
-        ". . . . top . . ."
-        ". left left left right right right ."
-        "page2 page2 . page3 page3 . page4 page4";
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(8, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . . home home . . ."
+    ". . . . top . . ."
+    ". left left left right right right ."
+    "page2 page2 . page3 page3 . page4 page4";
+  justify-content: center;
 }
-.sitemap > div {
+
+.sitemap>div {
   text-align: center;
 }
+
 .sm-home {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page2 {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page3 {
   grid-area: page3;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page4 {
-    grid-area: page4;
-    background-color: #ccc;
-    line-height: 3em;
-  }
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+}
 
 .top {
   grid-area: top;
