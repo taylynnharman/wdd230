@@ -102,7 +102,7 @@ h6 {
 #weather {
     display: flex;
     justify-content: right;
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
 }
 
 #weatherico {
@@ -111,10 +111,9 @@ h6 {
 }
 
 
-
 header {
     display: grid;
-    grid-template-columns: 250px auto auto 90px;
+    grid-template-columns: 250px auto 90px;
     background: var(--primary-color);
     align-items: center;
     opacity: 90%;
@@ -132,6 +131,16 @@ header {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    grid-column: 1 / 4;
+}
+
+
 
 .navigation li {
     display: none;
