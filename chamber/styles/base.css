@@ -64,9 +64,16 @@ h6 {
 
 #welcome {
     position: absolute;
-    top: 40%;
+    color: var(--text-color);
+    font-size: 7vw;
     text-align: center;
+    top: 7%;
+    transform: translate(6%, 0%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
 }
+
 
 #join {
     background-color: var(--primary-color);

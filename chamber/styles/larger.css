@@ -18,6 +18,12 @@
         padding-left: 18px;
     }
 
+    #welcome {
+        left: 40%;
+        transform: translate(-30%, -30%);
+        font-size: 4vw;
+    }
+
     #weather {
         display: flex;
         padding-right: 90px;
