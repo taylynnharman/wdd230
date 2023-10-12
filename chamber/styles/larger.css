@@ -52,6 +52,10 @@
         height: auto;
     }
 
+    .events {
+        min-width: 300px;
+    }
+
     #join {
         width: 20%;
         padding: 2% 5%;
