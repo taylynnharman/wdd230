@@ -15,13 +15,21 @@ body {
     max-width: fit-content;
 }
 
+nav {
+    background-color: var(--primary-color);
+    padding-left: 0;
+    flex-direction: column;
+    line-height: 96px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 section {
     display: flex;
     justify-content: center;
 }
 
-h1 {
+h2 {
     text-align: center;
     padding: 50px;
 }
@@ -169,21 +177,14 @@ header {
     padding-left: 18px;
 }
 
-.navigation {
-    background-color: var(--primary-color);
-    padding-left: 0;
-    flex-direction: column;
-    line-height: 96px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 ul {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     list-style: none;
     padding: 0;
     grid-column: 1 / 4;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -201,6 +202,7 @@ ul {
     text-align: center;
     font-size: 14pt;
     font-family: var(--heading-font);
+    width: 7em;
 }
 
 .navigation.ul {
