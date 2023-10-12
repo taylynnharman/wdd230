@@ -13,8 +13,6 @@
     }
 
     nav {
-        display: flex;
-        flex-direction: row;
         grid-column: 2 / 3;
         grid-row: 1;
     }
@@ -22,8 +20,7 @@
     .navigation {
         display: flex;
         flex-direction: row;
-        grid-column: 2 / 3;
-        grid-row: 1;
+
     }
 
     #logo {

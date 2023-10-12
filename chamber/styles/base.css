@@ -27,6 +27,9 @@ nav {
 section {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    /* Stack the heading and content vertically */
+    align-items: center;
 }
 
 h2 {
@@ -143,8 +146,8 @@ h6 {
 }
 
 #events {
-    display: block;
     margin-inline: 40px;
+    display: block;
 }
 
 .events {
