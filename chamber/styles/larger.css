@@ -5,7 +5,7 @@
 
     header {
         display: grid;
-        grid-template-columns: 250px auto 200px;
+        grid-template-columns: 250px auto 200px 100px;
     }
 
     ul .navigation {
@@ -34,8 +34,7 @@
 
     #weather {
         display: flex;
-        padding-right: 90px;
-        justify-content: right;
+        padding-inline: 30px;
         grid-column: 3 / 4;
     }
 
@@ -46,6 +45,10 @@
 
     #weatherdiv {
         height: 500px;
+    }
+
+    .toggle {
+        grid-column: 4 / 5;
     }
 
     .navigation li {
