@@ -12,7 +12,7 @@ button.addEventListener('click', function() {
     }
     const li = document.createElement('li');
     const deleteButton = document.createElement('button');
-    const editButton = document.createElement('button')
+    const editButton = document.createElement('button');
     li.textContent = input.value;
 
     input.value = '';
@@ -48,14 +48,6 @@ button.addEventListener('click', function() {
 });
 button.addEventListener('click', () => {});
 
-
-
-// Get the button and list elements
-const replaceButton = document.getElementById('replaceButton');
-const list = document.getElementById('list');
-
-// Add an event listener to the button
-replaceButton.addEventListener('click', replaceListItemWithInput);
 
 // Function to replace a list item with an input box
 function replaceListItemWithInput() {
