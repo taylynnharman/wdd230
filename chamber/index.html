@@ -15,13 +15,13 @@
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/fav.ico">
     <title>Highland City Chamber of Commerce</title>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/holder.png" alt="holding space for logo">
+        <img id="logo" src="images/hcc.png" alt="Highland City Chamber of Commerce logo">
         <div id="weather">
             <p></p>
             <img id="weatherico" src="images/weather.ico" alt="weather icon">
@@ -44,39 +44,51 @@
         </nav>
     </header>
     <main>
-        <div id="hero">
-            <h1 id="welcome">Highland City<br>Chamber of Commerce</h1>
-            <img id="heroimg" src="images/hero.jpeg" alt="Highland City with Snowy Mountain Backdrop">
-            <button id="join">Join</button>
-        </div>
+        <div class="herolabel">
+            <div id="hero">
+                <h1 id="welcome">Highland City<br>Chamber of Commerce</h1>
+                <picture>
+                    <source srcset="images/hero-small500.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-medium1000.webp"
+                        media="(max-width: 1000px and (orientation: landscape)">
+                    <img src="images/hero-replace1500.webp" alt="hero" width="1500" height="750">
+                </picture>
+                <button id="join">Join</button>
+            </div>
 
 
-        <section id="spotlights">
-            <h2>Company Spotlights</h2>
-            <div class="carousel">
-                <!-- <div class="slide">
+            <section id="spotlights">
+                <h2>Company Spotlights</h2>
+                <div class="carousel">
+                    <!-- <div class="slide">
                     <img src=images/dgco.png>
                 </div>
                 <div class="slide"><img src=images/tetonparty.png></div>
                 <div class="slide"><img src=images/phoenix.png></div> -->
-            </div>
-        </section>
+                </div>
+            </section>
 
 
-        <section id="eventsect">
-            <h2>Current Events</h2>
-            <div id="events">
-                <div class="events"></div>
-                <div class="events"></div>
-                <div class="events"></div>
-            </div>
-        </section>
+            <section id="eventsect">
+                <h2>Current Events</h2>
+                <div id="events">
+                    <div class="events"></div>
+                    <div class="events"></div>
+                    <div class="events"></div>
+                </div>
+            </section>
 
 
-        <section>
-            <h2>Weather</h2>
-            <div id="weatherdiv"></div>
-        </section>
+            <section>
+                <h2>Weather</h2>
+                <div id="weatherdiv">
+                    <div class="weathinput">Temp in F&deg;: <input id="temp" type="text"></div>
+                    <div class="weathinput">Windspeed in MPH: <input id="windspeed" type="text"></div>
+                    <div class="weathinput">Windchill:
+                        <p id="windchill"></p>
+                    </div>
+                </div>
+            </section>
 
 
     </main>

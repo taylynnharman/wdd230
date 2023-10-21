@@ -49,6 +49,7 @@
 
     .toggle {
         grid-column: 4 / 5;
+        text-align: left;
     }
 
     .navigation li {
