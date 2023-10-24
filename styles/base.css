@@ -202,7 +202,6 @@ footer {
   font-weight: 700;
 }
 
-
 /* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
 .open li {
   display: block;
