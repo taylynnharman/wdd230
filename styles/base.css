@@ -217,4 +217,5 @@ iframe {
   grid-column: 1 / 3;
   width: 100%;
   padding-bottom: 20px;
+  border: 0;
 }
