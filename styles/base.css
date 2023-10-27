@@ -106,10 +106,6 @@ main {
   margin-left: 80px;
 }
 
-.card:nth-child(2) {
-  margin-right: 80px;
-}
-
 .card li {
   text-align: left;
   list-style-type: decimal-leading-zero;
@@ -185,9 +181,7 @@ footer {
   text-decoration: none;
   /* Remove underlines from links */
   color: white;
-  font-weight: bold;
   text-align: center;
-  font-size: 14pt;
   padding: 10px;
 }
 
