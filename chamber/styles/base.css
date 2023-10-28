@@ -351,7 +351,6 @@ body.dark-mode {
     background-color: #333;
     /* Dark background color */
     color: #fff;
-
 }
 
 h2.dark-mode {
@@ -361,4 +360,12 @@ h2.dark-mode {
 footer.dark-mode {
     background-color: #1e1e1e;
     color: #fff;
+}
+
+/* Discover css */
+.card-img {
+    border: 10px solid var(--primary-color);
+    width: 800px;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 10px #161c1c;
 }
