@@ -20,3 +20,6 @@ document.getElementById("windspeed").addEventListener("input", calculateWindChil
 
 // Call the function once to calculate windchill initially.
 calculateWindChill();
+
+// F&deg;
+//MPH
