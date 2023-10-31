@@ -56,12 +56,13 @@ h2 {
   margin-inline: 40px;
 }
 
-h3 {
+.card h3 {
   background: var(--main-color);
   ;
   color: white;
-  text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 main {
@@ -93,7 +94,7 @@ main {
 /* Card styles */
 
 .card {
-  text-align: center;
+
   border: 1px solid var(--main-color);
   color: var(--main-color);
   grid-column: 1 / 3;
@@ -122,6 +123,10 @@ main {
 
 .card.ul {
   list-style-position: inside;
+}
+
+.card:nth-child(4) {
+  grid-column: 1/3;
 }
 
 footer {
