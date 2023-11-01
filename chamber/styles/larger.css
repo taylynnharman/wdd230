@@ -92,10 +92,8 @@
 
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 50px;
-        background: var(--secondary-color);
-        color: var(--text-color);
         padding: 20px;
         font-size: 10pt;
         margin-top: 40px;
@@ -105,16 +103,21 @@
     .dis-main {
         display: grid;
         grid-template-columns: 300px 1fr;
+        margin: 2em;
     }
 
-    section:nth-child(3) {
+    section:nth-child(4) {
         grid-column: 2/3;
         grid-row: 1/8;
     }
 
+    .card-img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 
     section:first-child,
-    section:nth-child(2) {
+    section:nth-child(2),
+    section:nth-child(3) {
         grid-column: 1/2;
     }
 }
