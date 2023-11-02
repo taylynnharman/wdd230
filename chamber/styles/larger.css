@@ -99,6 +99,13 @@
         margin-top: 40px;
     }
 
+    .socials {
+        display: flex;
+        grid-column: 5/6;
+        justify-content: right;
+        align-items: center;
+    }
+
     /* Discover css */
     .dis-main {
         display: grid;
