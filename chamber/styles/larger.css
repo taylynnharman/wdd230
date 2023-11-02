@@ -12,6 +12,18 @@
         grid-column: 1 / 4;
     }
 
+    .navigation a {
+        font-weight: bold;
+        text-align: center;
+        width: 7em;
+        text-align: center;
+    }
+
+    .navigation li {
+        display: none;
+        max-width: 145px;
+    }
+
     nav {
         grid-column: 2 / 3;
         grid-row: 1;

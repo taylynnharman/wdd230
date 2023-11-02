@@ -57,7 +57,6 @@ h2 {
     padding: 3px 7px 6px;
     font-size: 2rem;
     width: 50px;
-    border-color: white;
     justify-self: center;
 }
 
@@ -211,22 +210,23 @@ ul {
 
 .navigation li {
     display: none;
-    max-width: 145px;
 }
 
 .navigation a {
     display: block;
     text-decoration: none;
     color: var(--text-color);
-    font-weight: bold;
-    text-align: center;
     font-size: 14pt;
     font-family: var(--heading-font);
-    width: 7em;
 }
 
 .navigation.ul {
     padding-left: 0;
+}
+
+ul li a:active {
+    background: var(--text-color);
+    color: var(--accent1-color);
 }
 
 .navigation li a:hover {
@@ -236,14 +236,9 @@ ul {
 }
 
 .open li {
-    background: var(--secondary-color);
     display: block;
-    width: 100%;
 }
 
-.open li a {
-    display: block;
-}
 
 footer {
     background: var(--secondary-color);
@@ -265,8 +260,6 @@ footer {
     grid-row: 1/2;
     text-align: center;
 }
-
-
 
 #copy {
     text-align: center;
