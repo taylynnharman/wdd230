@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="TayLynn Harman">
-    <meta name="description" content="WDD 230 - TayLynn Harman - Fall 2023 website projects.">
+    <meta name="description" content="WDD 230 - TayLynn Harman - Form Activity">
     <meta property="og:url" content="https://github.com/taylynnharman/wdd230.git">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="TayLynn Harman WDD230 Homepage">
+    <meta property="og:title" content="TayLynn Harman WDD230 Form Activity">
     <meta property="og:image" content="https://extension.usu.edu/efnep/images/utah-valley.jpg">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <link rel="stylesheet" type="text/css" href="styles/form.css">
     <link rel="icon" href="images/favicon.ico">
-    <title>TayLynn Harman - WDD 230 - Web Frontend Development</title>
+    <title>TayLynn Harman - WDD 230 - Form Activity</title>
 </head>
 
 <body>
@@ -46,25 +46,26 @@
         </div>
     </div>
     <main>
-        <form>
-            <label>Username:</label>
+        <form action="record.html" method="get">
+            <label>Username: <span class="required">*</span></label>
             <input type="text" id="username" name="username" required>
             <br>
 
-            <label>Password:</label>
+            <label>Password: <span class="required">*</span></label>
             <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
             <br>
 
-            <label>Confirm Password:</label>
+            <label>Confirm Password: <span class="required">*</span></label>
             <input type="password" id="password2" name="password2" required>
             <br>
 
-            <label>Please enter a valid email address:</label>
+            <label>Please enter a valid email address: <span class="required">*</span></label>
             <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
             <br>
 
-            <label>Page Rating:</label>
-            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="1" list="rangevalues">
+            <label for="r">Page Rating:</label>
+            <div id="rangevalue">1</div>
+            <input type="range" id="r" name="r" min="1" max="10" step="1" value="1" list="rangevalues">
             <datalist id="rangevalues">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -79,6 +80,9 @@
             </datalist>
 
             <br>
+
+
+            <input id="reg" type="submit" value="Register">
         </form>
     </main>
     <footer>

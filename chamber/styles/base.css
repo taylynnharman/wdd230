@@ -10,6 +10,8 @@
     --headline-color-on-white: #3c3c39;
 }
 
+
+
 body {
     font-family: var(--paragraph-font);
     max-width: fit-content;
