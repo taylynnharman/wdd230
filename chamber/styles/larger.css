@@ -17,6 +17,7 @@
         text-align: center;
         width: 7em;
         text-align: center;
+        color: var(--text-color);
     }
 
     .navigation li {

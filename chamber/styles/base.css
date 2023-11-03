@@ -206,8 +206,6 @@ ul {
     margin-bottom: 0;
 }
 
-
-
 .navigation li {
     display: none;
 }
@@ -237,6 +235,11 @@ ul li a:active {
 
 .open li {
     display: block;
+    background: var(--secondary-color);
+    margin: 0em;
+    border-width: 2px;
+    border-style: outset;
+    border-color: #999999;
 }
 
 
