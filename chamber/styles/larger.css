@@ -42,7 +42,7 @@
     #welcome {
         left: 40%;
         transform: translate(-30%, -30%);
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     #weather {
@@ -91,8 +91,7 @@
         min-width: 300px;
     }
 
-    #join {
-        width: 20%;
+    .button {
         padding: 2% 5%;
         font-size: 2vw;
         top: 70%;
@@ -139,5 +138,14 @@
     section:nth-child(2),
     section:nth-child(3) {
         grid-column: 1/2;
+    }
+
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    table {
+        grid-column: 2/3;
     }
 }

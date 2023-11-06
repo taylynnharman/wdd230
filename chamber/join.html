@@ -1,23 +1,154 @@
-This page contains information about the benefit of joining the chamber and a membership application form. There are
-three membership level options of non-profit, silver, and gold. The different levels have different perks including
-directory listings, publications, trainings, social media work, luncheons, sponsorships, advertising, etc.
+<!DOCTYPE html>
+<html lang="en">
 
-<footer>
-    <div id="contacts">(801) 796 - 2510 | contact@highlandchamber.com | 5400 W. Civic Center Drive Highland City, UT
-        84003</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TayLynn Harman">
+    <meta name="description" content="Highland City Chamber of Commerce - Homepage">
+    <meta property="og:url"
+        content="https://github.com/taylynnharman/wdd230/tree/0a32c081dece68b5ecc324aec8c19ab7a031a241/chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Join Highland City Chamber of Commerce">
+    <meta property="og:image" content="https://extension.usu.edu/efnep/images/utah-valley.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/fav.ico">
+    <title>Highland City Chamber of Commerce</title>
+</head>
 
-    <div class="socials">
-        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+<body>
+    <header>
+        <img id="logo" src="images/hcc.png" alt="Highland City Chamber of Commerce logo">
+        <div id="weather">
+            <p></p>
+            <img id="weatherico" src="images/weather.ico" alt="weather icon">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="mode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" target="_blank">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <main class="join">
+
+            <form action="thankyou.html" method="get">
+                <label>First Name: <span class="required">*</span></label>
+                <input type="text" id="first" name="first" required>
+                <br>
+
+                <label>Last Name: <span class="required">*</span></label>
+                <input type="text" id="last" name="last" required>
+                <br>
+                <label>Last Name: <span class="required">*</span></label>
+                <input type="text" id="last" name="last" required>
+                <br>
+                <label>Title/Position: </label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}"
+                    title="Must contain alpha characters, hyphens, and spaces (minimum of 7 characters).">
+                <br>
+                <label>Please enter a valid email address: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                <br>
+                <label>Phone Number: <span class="required">*</span></label>
+                <input type="telephone" id="phone" name="phone" required>
+                <br>
+
+                <label>Business/Organization's Name: <span class="required">*</span></label>
+                <input type="text" id="business" name="business" required>
+                <br>
+
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership">
+                    <option value="NP Membership">NP Membership (non-profit)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+                <br>
+
+                <label for="org_description">Business/Organization Description: </label>
+                <textarea id="org_description" name="org_description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+                <input class="reg" type="submit" value="Join">
+            </form>
+            <table>
+                <caption>Table 1: Memebership Level Comparison</caption>
+
+                <thead>
+                    <tr>
+                        <th colspan="5" scope="colgroup">Highland City Chamber of Commerce Memberships</th>
+                    </tr>
+                    <tr>
+                        <th class="highlight"></th>
+                        <th scope="col">NP Membership (non-profit)</th>
+                        <th scope="col">Bronze Membership</th>
+                        <th scope="col">Silver Membership</th>
+                        <th scope="col">Gold Membership</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Event Discounts</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Feature 2</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Feature 3</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div id="contacts">(801) 796 - 2510 | contact@highlandchamber.com | 5400 W. Civic Center Drive Highland
+                City, UT
+                84003</div>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            </div>
+            <div id="copy">
+                <p>
+                    &copy;
+                    <span id="currentYear"></span>
+                    TayLynn Harman | Created as a project for WDD230
+                </p>
+
+                <p id="lastModified"></p>
+            </div>
     </div>
-    <div id="copy">
-        <p>
-            &copy;
-            <span id="currentYear"></span>
-            TayLynn Harman | Created as a project for WDD230
-        </p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
 
-        <p id="lastModified"></p>
-    </div>
-</footer>
+</html>
