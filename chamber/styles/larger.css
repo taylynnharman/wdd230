@@ -116,12 +116,11 @@
     .dis-main {
         display: grid;
         grid-template-columns: 300px 1fr;
-        margin: 2em;
     }
 
     section:nth-child(4) {
-        grid-column: 2/3;
-        grid-row: 1/8;
+        grid-column: 1/2;
+        grid-row: 4/8;
     }
 
     .card-img:hover {
@@ -132,6 +131,7 @@
     section:nth-child(2),
     section:nth-child(3) {
         grid-column: 1/2;
+
     }
 
     .join {
@@ -141,5 +141,20 @@
 
     table {
         grid-column: 2/3;
+    }
+
+    .dimg {
+        grid-row: 1/10;
+        background: var(--secondary-color);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-img:nth-child(odd) {
+        grid-column: 2/3;
+    }
+
+    div.card-img caption {
+        text-align: center;
     }
 }

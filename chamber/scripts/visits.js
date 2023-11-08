@@ -1,29 +1,39 @@
-//initialize display element variable
-const visitsDisplay = document.querySelector("#visits");
+//initialize variables
+const visitDisplay = document.querySelector("#visits");
+let lastVisit = getLastVisit();
+let currentVisit = Date.now();
+let diff = getDiff(currentVisit, lastVisit);
 
-//get stored value for numVisits or set to 0
-let currentVisit = new Date();
+// Set last visit
+function setLastVisit() {
+    localStorage.setItem('lastVisit', JSON.stringify(currentVisit));
+}
 
-if (numVisits == 0) {
+// Get last visit
+function getLastVisit() {
+    return JSON.parse(localStorage.getItem('lastVisit'));
+}
+
+function getDiff(currentVisit, lastVisit) {
+    return Math.floor((currentVisit - lastVisit) / 86400000); // Use Math.floor to round down to a whole number
+}
+
+if (lastVisit == null) {
     //if this is their first visit
-    visitsDisplay.textContent = "Welcome! Let us know if you have any questions."
-} 
-
-else if (lastVisit - currentVisit ){
-    //If the amount of time between visits is less than a day
-    visitsDisplay.textContent = "Back so soon! Awesome!."
+    visitDisplay.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    console.log(diff);
+    if (diff < 1) {
+        // If the amount of time between visits is less than a day
+        visitDisplay.textContent = "Back so soon! Awesome!";
+    } else {
+        const dayString = diff === 1 ? "day" : "days";
+        visitDisplay.textContent = `Your last visit was ${diff} ${dayString} ago.`;
+    }
 }
-//
-else {
-    visitsDisplay.textContent = "Your last visit was" + {numVisits}+ "days ago."
-}
 
-numVisits++;
+// Set lastVisit before using it
+setLastVisit();
 
+lastVisit = getLastVisit();
 
-
-// If the number of days is 1, then change the language to "day" not "days"
-
-
-
-   
