@@ -369,10 +369,10 @@ footer.dark-mode {
     grid-row: 2/3;
 }
 
-/* .card-img {
-    justify-content: center;
+.card-img {
+    /* Set caption color to white */
     color: white;
-} */
+}
 
 section.dimg {
     background: var(--secondary-color);
@@ -382,17 +382,13 @@ section.dimg {
     padding-inline: 25px;
 }
 
-.card-img {
-    color: white;
-}
-
 
 .dcard {
     border: 1px solid var(--main-color);
 }
 
 .dcard h3 {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--text-color);
     padding: 20px;
 }
