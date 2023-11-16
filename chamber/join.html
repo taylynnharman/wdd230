@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="TayLynn Harman">
-    <meta name="description" content="Highland City Chamber of Commerce - Homepage">
+    <meta name="description" content="Highland City Chamber of Commerce - Join Page">
     <meta property="og:url"
         content="https://github.com/taylynnharman/wdd230/tree/0a32c081dece68b5ecc324aec8c19ab7a031a241/chamber">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Join Highland City Chamber of Commerce">
+    <meta property="og:title" content="Highland City Chamber of Commerce - Join Page">
     <meta property="og:image" content="https://extension.usu.edu/efnep/images/utah-valley.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -17,12 +17,14 @@
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <link rel="icon" href="images/fav.ico">
-    <title>Highland City Chamber of Commerce</title>
+    <title>Highland City Chamber of Commerce - Join Page</title>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/hcc.webp" alt="Highland City Chamber of Commerce logo">
+        <a href="index.html">
+            <img id="logo" src="images/hcc.webp" alt="Highland City Chamber of Commerce logo">
+        </a>
         <div id="weather">
             <p></p>
             <img id="weatherico" src="images/weather.ico" alt="weather icon">
@@ -54,9 +56,6 @@
                 <label>Last Name: <span class="required">*</span></label>
                 <input type="text" id="last" name="last" required>
                 <br>
-                <label>Last Name: <span class="required">*</span></label>
-                <input type="text" id="last" name="last" required>
-                <br>
                 <label>Title/Position: </label>
                 <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}"
                     title="Must contain alpha characters, hyphens, and spaces (minimum of 7 characters).">
@@ -65,7 +64,7 @@
                 <input type="email" id="email" name="email" placeholder="example@example.com" required>
                 <br>
                 <label>Phone Number: <span class="required">*</span></label>
-                <input type="telephone" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" required>
                 <br>
 
                 <label>Business/Organization's Name: <span class="required">*</span></label>
@@ -104,19 +103,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Event Discounts</td>
+                        <td>Special Events</td>
+                        <td>✔️</td>
                         <td>✔️</td>
                         <td>✔️</td>
                         <td>✔️</td>
                     </tr>
                     <tr>
-                        <td>Feature 2</td>
+                        <td>Special Events</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Event Discounts</td>
+                        <td>❌</td>
                         <td>❌</td>
                         <td>✔️</td>
                         <td>✔️</td>
                     </tr>
                     <tr>
-                        <td>Feature 3</td>
+                        <td>Advertising</td>
+                        <td>❌</td>
                         <td>❌</td>
                         <td>❌</td>
                         <td>✔️</td>

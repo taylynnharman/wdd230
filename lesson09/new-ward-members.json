@@ -1,0 +1,13 @@
+{
+    "familyName" : "Harman",
+    "moveInDate" : "01-01-2001",
+    "numberOfPeople" : "1",
+    "visitedByBishopric" : true,
+    "familyMembers": [
+        {
+            "name": "Tay Harman",
+            "gender": "Female",
+            "birthdate": "01-01-2001"
+        }
+    ]
+}

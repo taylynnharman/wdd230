@@ -461,10 +461,6 @@ form {
     color: var(--text-color);
 }
 
-form input {
-    background: #acacac;
-}
-
 .required {
     color: red;
     /* Use the required field color variable */
