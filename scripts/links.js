@@ -9,21 +9,18 @@ async function getLinks() {
     displayLinks(data.lessons); // Assuming the property name is "lessons" based on your previous JSON structure
 }
 
-const displayLinks = (lesson) => {
+const displayLinks = (links) => {
     let heading = document.createElement('h3');
     let ul = document.createElement('ul');
     heading.textContent = "Learning Activities";
 
-    lesson.forEach((link) => {
+    links.forEach((title) => {
         let li = document.createElement('li');
         let a = document.createElement('a');
-        a.href = `${baseURL}${link.url}`;
-        a.textContent = link.title;
+        a.href = `${baseURL}${title.url}`;
+        a.textContent = title.title;
 
-        let div = document.createElement('div');
-        div.appendChild(a);
-
-        li.appendChild(div);
+        li.appendChild(a);
         ul.appendChild(li);
     });
 
