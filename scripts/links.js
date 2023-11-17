@@ -16,18 +16,14 @@ const displayLinks = (lessons) => {
 
     lessons.forEach((lesson) => {
         let li = document.createElement('li');
+        let a = document.createElement('a');
+        a.href = `${baseURL}${link.url}`;
+        a.textContent = link.title;
 
-        lesson.links.forEach((link) => {
-            let a = document.createElement('a');
-            a.href = `${baseURL}${link.url}`;
-            a.textContent = link.title;
+        let div = document.createElement('div');
+        div.appendChild(a);
 
-            let div = document.createElement('div');
-            div.appendChild(a);
-
-            li.appendChild(div);
-        });
-
+        li.appendChild(div);
         ul.appendChild(li);
     });
 
