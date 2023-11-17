@@ -6,7 +6,7 @@ async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     console.log(data);
-    displayLinks(data.lessons); // Assuming the property name is "lessons" based on your previous JSON structure
+    displayLinks(data.links); 
 }
 
 const displayLinks = (links) => {
