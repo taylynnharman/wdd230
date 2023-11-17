@@ -1,0 +1,106 @@
+{"lessons": [
+    {
+        "lesson": "02",
+        "links": [
+            {
+                "url":"lessons/lesson02/media-query.html",
+                "title": "L02 | Media Queries"
+            },
+            {
+                "url":"lessons/lesson02/mediaquery.html",
+                "title": "L02 | Design Principles Document"
+            }
+       
+        ]
+    },
+    {
+        "lesson": "03",
+        "links": [
+            {
+                "url":"lessons/lesson03/images/combinators.png",
+                "title": "L03 | CSS Combinators"
+            },
+            {
+                "url":"https://codepen.io/taylynnharman/pen/dywewZQ",
+                "title": "L03 | CSS Pseudo-elements"
+            },
+            {
+                "url":"https://codepen.io/taylynnharman/pen/OJrZdbb",
+                "title": "L03 | Responsive Hamburger Menu"
+            }
+       
+        ]
+    },
+    {
+        "lesson": "04",
+        "links": [
+            {
+                "url":"https://codepen.io/taylynnharman/pen/VwqGKWr",
+                "title": "L04 | CSS Pseudo-Classes"
+            }
+       
+        ]
+    },
+    {
+        "lesson": "05",
+        "links": [
+            {
+                "url":"lessons/lesson05/bom.html",
+                "title": "L05 | BOM"
+            }
+       
+        ]
+    },
+    {
+        "lesson": "06",
+        "links": [
+            {
+                "url":"lessons/lesson06/images/landscape.webp",
+                "title": "L06 | Image Format"
+            },
+            {
+                "url":"lessons/lesson06/responsive-images.html",
+                "title":"L06 | Responsive Images"
+            }
+        ]
+    },
+    {
+        "lesson": "07",
+        "links": [
+            {
+                "url":"lessons/lesson07/lazyload.html",
+                "title": "L07 | Lazy Load"
+            },
+            {
+                "url":"lessons/lesson07/bom2.html",
+                "title":"L07 | Web Storage API - localStorage"
+            }
+        ]
+    },
+    {
+        "lesson": "08",
+        "links": [
+            {
+                "url":"lessons/lesson08/tablebuild.html",
+                "title": "L08 | HTML Tables"
+            },
+            {
+                "url":"form.html",
+                "title":"L08 | HTML Forms"
+            }
+        ]
+    },
+    {
+        "lesson": "09",
+        "links": [
+            {
+                "url":"lessons/lesson09/new-ward-members.json",
+                "title": "L09 | JSON"
+            },
+            {
+                "url":"lessons/lesson09/prophets.html",
+                "title":"L09 | The Fetch API"
+            }
+        ]
+    }
+]}
