@@ -369,6 +369,10 @@ footer.dark-mode {
     grid-row: 2/3;
 }
 
+.card-img img {
+    text-align: center;
+}
+
 .card-img {
     /* Set caption color to white */
     color: white;
@@ -450,15 +454,20 @@ section.dimg {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
+input,
+select,
+textarea {
+    max-width: 20rem;
 }
 
 form {
     display: grid;
-    padding: 40px;
-    background: var(--secondary-color);
-    color: var(--text-color);
+    padding-inline: 40px;
+    color: var(--secondary-color);
+    border: solid var(--accent1-color);
+    border-radius: 20px;
+    padding-bottom: 40px;
+    margin-inline: 40px;
 }
 
 .required {
@@ -471,14 +480,17 @@ form {
 .reg {
     background: var(--secondary-color);
     color: var(--text-color);
+    font-family: var(--heading-font);
     margin-top: 20px;
+    font-size: 20px;
     padding: 20px;
     width: 7rem;
 }
 
 .reg:hover {
-    background: var(--accent1-color);
-    color: var(--text-color);
+    background: var(--text-color);
+    color: var(--accent1-color);
+    border-color: #bbb;
 }
 
 /* Carousel */
@@ -595,4 +607,56 @@ form {
     to {
         opacity: 1
     }
+}
+
+/* Join CSS */
+.joinheader {
+    grid-column: 1/3;
+    justify-content: center;
+}
+
+td {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+/* thankyou.html */
+main .confirmation {
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    margin: 3rem;
+    white-space: pre-line;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
 }
