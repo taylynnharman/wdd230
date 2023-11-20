@@ -49,7 +49,6 @@
         <main class="join">
             <h1 class="joinheader">Join The Highland City Chamber of Commerce</h1>
             <form action="thankyou.html" method="get">
-                <h1></h1>
                 <label>First Name: <span class="required">*</span></label>
                 <input type="text" id="first" name="first" required>
                 <br>
@@ -72,14 +71,51 @@
                 <input type="text" id="business" name="business" required>
                 <br>
 
-                <label for="membership">Membership Level:</label>
+                <!-- <label for="membership">Membership Level:</label>
                 <select id="membership" name="membership">
                     <option value="NP Membership">NP Membership (non-profit)</option>
                     <option value="Bronze Membership">Bronze Membership</option>
                     <option value="Silver Membership">Silver Membership</option>
                     <option value="Gold Membership">Gold Membership</option>
                 </select>
-                <br>
+                <br> -->
+                <label for="membership">Membership Level:</label>
+                <div class="membership-options">
+                    <div class="membership-level">
+                        <input type="radio" id="np-membership" name="membership" value="NP Membership">
+                        <label for="np-membership" class="np">NP Membership (non-profit) $50/Year</label>
+                        <ul>
+                            <li>Special Events</li>
+                        </ul>
+                    </div>
+                    <div class="membership-level">
+                        <input type="radio" id="bronze-membership" name="membership" value="Bronze Membership">
+                        <label for="bronze-membership" class="bronze">Bronze Membership $100/Year</label>
+                        <ul>
+                            <li>Special Events</li>
+                            <li>Trainings</li>
+                        </ul>
+                    </div>
+                    <div class="membership-level">
+                        <input type="radio" id="silver-membership" name="membership" value="Silver Membership">
+                        <label for="silver-membership" class="silver">Silver Membership $150/Year</label>
+                        <ul>
+                            <li>Special Events</li>
+                            <li>Trainings</li>
+                            <li>Event Discounts</li>
+                        </ul>
+                    </div>
+                    <div class="membership-level">
+                        <input type="radio" id="gold-membership" name="membership" value="Gold Membership">
+                        <label for="gold-membership" class="gold">Gold Membership $200/Year</label>
+                        <ul>
+                            <li>Special Events</li>
+                            <li>Trainings</li>
+                            <li>Event Discounts</li>
+                            <li>Advertising</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <label for="org_description">Business/Organization Description: </label>
                 <textarea id="org_description" name="org_description"></textarea>
@@ -87,50 +123,40 @@
                 <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
                 <input class="reg" type="submit" value="Join">
             </form>
-            <table>
-                <caption>Please select a Membership</caption>
-
-                <thead>
-                    <tr>
-                        <th class="highlight"></th>
-                        <th scope="col">NP Membership (non-profit)</th>
-                        <th scope="col">Bronze Membership</th>
-                        <th scope="col">Silver Membership</th>
-                        <th scope="col">Gold Membership</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Special Events</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Special Events</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Event Discounts</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Advertising</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div>
+                <!-- <div class="membership-level">
+                    <h2 class="np">NP Membership (non-profit) $50/Year</h2>
+                    <ul>
+                        <li>Special Events</li>
+                    </ul>
+                </div>
+                <div class="membership-level">
+                    <h2 class="bronze">Bronze Membership $100/Year</h2>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Trainings</li>
+                    </ul>
+                </div>
+                <div class="membership-level">
+                    <h2 class="silver">Silver Membership $150/Year</h2>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Trainings</li>
+                        <li>Event Discounts</li>
+                    </ul>
+                </div>
+                <div class="membership-level">
+                    <h2 class="gold">Gold Membership $200/Year</h2>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Trainings</li>
+                        <li>Event Discounts</li>
+                        <li>Advertising</li>
+                    </ul> -->
+                <!-- </div>
+            </div> -->
         </main>
+        <!-- FOOTER COMPLETE -->
         <footer>
             <div id="contacts">(801) 796 - 2510 | contact@highlandchamber.com | 5400 W. Civic Center Drive Highland
                 City, UT

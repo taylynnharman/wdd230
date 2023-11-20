@@ -134,9 +134,15 @@
 
     }
 
+    main .join {
+        display: grid;
+    }
+
     .join {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-inline: 9rem;
+        gap: 40px;
     }
 
     table {
