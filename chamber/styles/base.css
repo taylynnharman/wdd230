@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@800&display=swap");
 
+/* Main CSS */
+
 :root {
     --primary-color: #3c3c39;
     --secondary-color: #2f4d68;
@@ -10,13 +12,17 @@
     --headline-color-on-white: #3c3c39;
 }
 
-
-
 body {
     font-family: var(--paragraph-font);
     max-width: fit-content;
 }
 
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation */
 nav {
     background-color: var(--primary-color);
     padding-left: 0;
@@ -25,34 +31,6 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-}
-
-h1.dark-mode {
-    color: var(--text-color);
-}
-
-section {
-    /* Allows for align and flex to be used */
-    display: flex;
-    /* Keeps sections items one on top of the other */
-    flex-direction: column;
-    /* Keeps the heading stacked vertical */
-    align-items: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-#weather {
-    display: flex;
-    justify-content: right;
-    grid-column: 2 / 3;
-}
-
-#weatherico {
-    width: 30px;
-    height: 30px;
 }
 
 /* Responsive Menu styles */
@@ -75,6 +53,33 @@ h2 {
     color: white;
 }
 
+h1.dark-mode {
+    color: var(--text-color);
+}
+
+section {
+    display: flex;
+    /* Keeps sections items one on top of the other */
+    flex-direction: column;
+    /* Keeps the heading stacked vertical */
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#weather {
+    display: flex;
+    justify-content: right;
+    grid-column: 2 / 3;
+}
+
+#weatherico {
+    width: 30px;
+    height: 30px;
+}
+
 h1,
 h2,
 h3,
@@ -84,6 +89,8 @@ h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
 }
+
+/* INDEX PAGE */
 
 /* Hero img and components */
 #hero {
@@ -113,6 +120,74 @@ h6 {
     left: 30%;
 }
 
+/* Carousel */
+* {
+    box-sizing: border-box
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease;
+    background: var(--primary-color);
+    height: 300px;
+    width: 80%;
+    justify-self: center;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+
+    box-shadow: 5px 5px 10px #161c1c;
+    margin: 10px;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    /* Maintain the image's aspect ratio */
+    display: block;
+    /* Remove extra space below inline images */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 .button {
     background-color: var(--primary-color);
@@ -135,15 +210,7 @@ h6 {
     color: var(--accent1-color);
 }
 
-.carousel {
-    display: flex;
-    transition: transform 1s ease;
-    background: var(--primary-color);
-    height: 300px;
-    width: 80%;
-    justify-self: center;
 
-}
 
 #eventsect {
     display: block;
@@ -190,11 +257,6 @@ header {
     grid-template-columns: 100px auto 90px 90px;
     background: var(--primary-color);
     align-items: center;
-}
-
-#logo {
-    width: 100px;
-    height: auto;
 }
 
 ul {
@@ -356,7 +418,7 @@ footer.dark-mode {
     color: #fff;
 }
 
-/* Discover css */
+/* DISCOVER */
 /* .card-img {
     border: 30px solid var(--secondary-color);
 } */
@@ -504,63 +566,7 @@ form {
     border-color: #bbb;
 }
 
-/* Carousel */
-* {
-    box-sizing: border-box
-}
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-
-    box-shadow: 5px 5px 10px #161c1c;
-    margin: 10px;
-}
-
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    position: relative;
-}
-
-.mySlides img {
-    width: 100%;
-    height: auto;
-    /* Maintain the image's aspect ratio */
-    display: block;
-    /* Remove extra space below inline images */
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Caption text */
 .text {

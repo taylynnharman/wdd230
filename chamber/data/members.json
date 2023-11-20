@@ -1,0 +1,60 @@
+x{"companies": [
+    {
+        "name": "Dirt Gear Co.",
+        "address": "5353 W 11000 N, Highland, UT 84003",
+        "phone": "(801) 763-8044",
+        "url": "https://dirtgearco.com/",
+        "image": "../images/dgco.webp",
+        "membership": "Gold",
+    },
+    {
+        "name": "Painted Daisy Floral",
+        "address": "5435 W 11000 N Ste 15 Highland, UT 84003",
+        "phone": "(801) 763-8721",
+        "url": "https://www.painteddaisyflorist.com/",
+        "image": "../images/painteddaisy.webp",
+        "membership": "Silver",
+    },
+    {
+        "name": "Courage Reins",
+        "address": "5870 W 10400 N, Ste. C.
+        Highland, UT 84003",
+        "phone": "(801) 756-8900",
+        "url": "https://couragereins.org/",
+        "image": "../images/couragereins.png",
+        "membership": "Non-Profit",
+    },
+    {
+        "name": "North Pointe Dental LLC",
+        "address": "10290 N County Blvd Ste 101 Highland, UT 84003",
+        "phone": "801-805-1931 ",
+        "url": "https://www.northpointe.dental/",
+        "image": "../images/dental.webp",
+        "membership": "02",
+    },
+    {
+        "name": "Twirl Boutique",
+        "address": "UT-92, Highland, UT 84003",
+        "phone": "(385) 498-3426",
+        "url": "https://shoptwirlco.com/",
+        "image": "../images/twirl.avif",
+        "membership": "Bronze",
+    },
+    {
+        "name": "Rad Swimwear, LLC",
+        "address": "5509 W 11000 N
+        Highland, UT 84003",
+        "phone": "(801) 803-3520",
+        "url": "https://radswim.com/",
+        "image": "../images/RAD.avif",
+        "membership": "Bronze",
+    },
+    {
+        "name": "Meires Meats and Fine Foods",
+        "address": "5521 UT-92 #133, Highland, UT 84003",
+        "phone": "(801) 642-2069",
+        "url": "https://www.meiersmeats.com/",
+        "image": "../images/meiers.png",
+        "membership": "Gold",
+    }
+]}
