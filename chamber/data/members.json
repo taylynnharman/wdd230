@@ -1,11 +1,11 @@
-x{"companies": [
+{"members": [
     {
         "name": "Dirt Gear Co.",
         "address": "5353 W 11000 N, Highland, UT 84003",
         "phone": "(801) 763-8044",
         "url": "https://dirtgearco.com/",
         "image": "../images/dgco.webp",
-        "membership": "Gold",
+        "membership": "Gold"
     },
     {
         "name": "Painted Daisy Floral",
@@ -13,16 +13,15 @@ x{"companies": [
         "phone": "(801) 763-8721",
         "url": "https://www.painteddaisyflorist.com/",
         "image": "../images/painteddaisy.webp",
-        "membership": "Silver",
+        "membership": "Silver"
     },
     {
         "name": "Courage Reins",
-        "address": "5870 W 10400 N, Ste. C.
-        Highland, UT 84003",
+        "address": "5870 W 10400 N, Ste. C. Highland, UT 84003",
         "phone": "(801) 756-8900",
         "url": "https://couragereins.org/",
         "image": "../images/couragereins.png",
-        "membership": "Non-Profit",
+        "membership": "Non-Profit"
     },
     {
         "name": "North Pointe Dental LLC",
@@ -30,7 +29,7 @@ x{"companies": [
         "phone": "801-805-1931 ",
         "url": "https://www.northpointe.dental/",
         "image": "../images/dental.webp",
-        "membership": "02",
+        "membership": "Bronze"
     },
     {
         "name": "Twirl Boutique",
@@ -38,16 +37,15 @@ x{"companies": [
         "phone": "(385) 498-3426",
         "url": "https://shoptwirlco.com/",
         "image": "../images/twirl.avif",
-        "membership": "Bronze",
+        "membership": "Bronze"
     },
     {
         "name": "Rad Swimwear, LLC",
-        "address": "5509 W 11000 N
-        Highland, UT 84003",
+        "address": "5509 W 11000 N Highland, UT 84003",
         "phone": "(801) 803-3520",
         "url": "https://radswim.com/",
         "image": "../images/RAD.avif",
-        "membership": "Bronze",
+        "membership": "Bronze"
     },
     {
         "name": "Meires Meats and Fine Foods",
@@ -55,6 +53,6 @@ x{"companies": [
         "phone": "(801) 642-2069",
         "url": "https://www.meiersmeats.com/",
         "image": "../images/meiers.png",
-        "membership": "Gold",
+        "membership": "Gold"
     }
 ]}
