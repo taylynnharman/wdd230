@@ -73,11 +73,8 @@ h2 {
     display: flex;
     justify-content: right;
     grid-column: 2 / 3;
-}
-
-#weatherico {
-    width: 30px;
-    height: 30px;
+    align-items: center;
+    color: white;
 }
 
 h1,
@@ -260,7 +257,7 @@ h6 {
 
 header {
     display: grid;
-    grid-template-columns: 100px auto 90px 90px;
+    grid-template-columns: 100px auto 70px 90px;
     background: var(--primary-color);
     align-items: center;
 }
