@@ -1,11 +1,11 @@
-const source = "../data/members.json"
+const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/chamber/data/members.json"
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
     console.log('calling');
-    const response = await fetch(source);
+    const response = await fetch(url);
     const data = await response.json();
-    // console.table(data.members);
+    console.table(data.members);
     displayMembers(data.members)
   }
 
@@ -24,9 +24,9 @@ async function getMemberData() {
     
         // Build the h2 content out to show the member's full name
         name.textContent = `${member.name}`; 
-        address.textContent = `${member.name}`; 
+        address.textContent = `${member.address}`; 
         phone.textContent = `${member.phone}`; 
-        website.textContent = `${member.url}`; 
+        website.textContent = `${member.website}`; 
         membership.textContent = `${member.membership}`; 
         name.textContent = `${member.name}`; 
         // fill in the blank

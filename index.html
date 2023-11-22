@@ -47,12 +47,16 @@
   <main>
     <h2>WDD 230: Web Frontend Development</h2>
     <section id="activity" class="card"></section>
-    <section class="card">
+    <section class="card" class="info">
       <h3>Information</h3>
-      <span class="label">Weather: </span>
-      <div class="weathinput" id="temp">Temp </div>
-      <div class="weathinput" id="windspeed">Windspeed </div>
-      <div class="weathinput">Windchill <span id="windchill"></span></div>
+      <p>Rexburg, Idaho</p>
+      <div class="weather">
+        <figure>
+          <img id="weather-icon" src="" alt="">
+          <span id="temp"></span>
+          <figcaption></figcaption>
+        </figure>
+      </div>
       <span>Page Visits: </span>
       <span id="visits"></span>
     </section>
@@ -74,6 +78,7 @@
   <script src="scripts/getdates.js"></script>
   <script src="scripts/responsivemenu.js"></script>
   <script src="scripts/links.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>
