@@ -77,6 +77,10 @@ h2 {
     color: white;
 }
 
+.banner {
+    text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -147,7 +151,6 @@ h6 {
     margin: 10px;
 }
 
-
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -191,7 +194,6 @@ h6 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .button {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -207,13 +209,10 @@ h6 {
     text-decoration: none;
 }
 
-
 .button:hover {
     background: var(--text-color);
     color: var(--accent1-color);
 }
-
-
 
 #eventsect {
     display: block;
@@ -231,14 +230,6 @@ h6 {
     display: block;
 }
 
-.weathinput {
-    padding: 20px;
-    overflow: auto;
-}
-
-
-
-
 #weatherdiv {
     padding: 30px;
     height: 300px;
@@ -248,11 +239,8 @@ h6 {
     color: var(--text-color);
 }
 
-
-
 .slide img {
     height: 150px;
-    /* change later */
 }
 
 header {
