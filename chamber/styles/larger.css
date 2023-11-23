@@ -166,6 +166,9 @@
     }
 
     /* Join CSS */
+    main.join {
+        display: grid;
+    }
 
 
 }

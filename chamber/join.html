@@ -26,8 +26,8 @@
             <img id="logo" src="images/hcc.webp" alt="Highland City Chamber of Commerce logo">
         </a>
         <div id="weather">
-            <p></p>
-            <img id="weatherico" src="images/weather.ico" alt="weather icon">
+            <img id="weather-icon" src="" alt="">
+            <span id="headtemp"></span>
         </div>
         <div class="toggle">
             <label class="switch">
@@ -45,7 +45,7 @@
             </ul>
         </nav>
     </header>
-    <div class="wrapper">
+    <div class="join-wrapper">
         <main class="join">
             <h1 class="joinheader">Join The Highland City Chamber of Commerce</h1>
             <form action="thankyou.html" method="get">
@@ -57,7 +57,7 @@
                 <input type="text" id="last" name="last" required>
                 <br>
                 <label>Title/Position: </label>
-                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}"
+                <input type="text" id="position" name="position" required pattern="[A-Za-z -]{7,}"
                     title="Must contain alpha characters, hyphens, and spaces (minimum of 7 characters).">
                 <br>
                 <label>Please enter a valid email address: <span class="required">*</span></label>
@@ -71,51 +71,16 @@
                 <input type="text" id="business" name="business" required>
                 <br>
 
-                <!-- <label for="membership">Membership Level:</label>
+                <label for="membership">Membership Level (*see benefits):</label>
                 <select id="membership" name="membership">
                     <option value="NP Membership">NP Membership (non-profit)</option>
                     <option value="Bronze Membership">Bronze Membership</option>
                     <option value="Silver Membership">Silver Membership</option>
                     <option value="Gold Membership">Gold Membership</option>
                 </select>
-                <br> -->
-                <label for="membership">Membership Level:</label>
-                <div class="membership-options">
-                    <div class="membership-level">
-                        <input type="radio" id="np-membership" name="membership" value="NP Membership">
-                        <label for="np-membership" class="np">NP Membership (non-profit) $50/Year</label>
-                        <ul>
-                            <li>Special Events</li>
-                        </ul>
-                    </div>
-                    <div class="membership-level">
-                        <input type="radio" id="bronze-membership" name="membership" value="Bronze Membership">
-                        <label for="bronze-membership" class="bronze">Bronze Membership $100/Year</label>
-                        <ul>
-                            <li>Special Events</li>
-                            <li>Trainings</li>
-                        </ul>
-                    </div>
-                    <div class="membership-level">
-                        <input type="radio" id="silver-membership" name="membership" value="Silver Membership">
-                        <label for="silver-membership" class="silver">Silver Membership $150/Year</label>
-                        <ul>
-                            <li>Special Events</li>
-                            <li>Trainings</li>
-                            <li>Event Discounts</li>
-                        </ul>
-                    </div>
-                    <div class="membership-level">
-                        <input type="radio" id="gold-membership" name="membership" value="Gold Membership">
-                        <label for="gold-membership" class="gold">Gold Membership $200/Year</label>
-                        <ul>
-                            <li>Special Events</li>
-                            <li>Trainings</li>
-                            <li>Event Discounts</li>
-                            <li>Advertising</li>
-                        </ul>
-                    </div>
-                </div>
+                <br>
+
+
 
                 <label for="org_description">Business/Organization Description: </label>
                 <textarea id="org_description" name="org_description"></textarea>
@@ -124,7 +89,7 @@
                 <input class="reg" type="submit" value="Join">
             </form>
             <div>
-                <!-- <div class="membership-level">
+                <div class="membership-level">
                     <h2 class="np">NP Membership (non-profit) $50/Year</h2>
                     <ul>
                         <li>Special Events</li>
@@ -152,31 +117,31 @@
                         <li>Trainings</li>
                         <li>Event Discounts</li>
                         <li>Advertising</li>
-                    </ul> -->
-                <!-- </div>
-            </div> -->
+                    </ul>
+                </div>
+            </div>
         </main>
-        <!-- FOOTER COMPLETE -->
-        <footer>
-            <div id="contacts">(801) 796 - 2510 | contact@highlandchamber.com | 5400 W. Civic Center Drive Highland
-                City, UT
-                84003</div>
-
-            <div class="socials">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-            </div>
-            <div id="copy">
-                <p>
-                    &copy;
-                    <span id="currentYear"></span>
-                    TayLynn Harman | Created as a project for WDD230
-                </p>
-
-                <p id="lastModified"></p>
-            </div>
     </div>
+    <!-- FOOTER COMPLETE -->
+    <footer>
+        <div id="contacts">(801) 796 - 2510 | contact@highlandchamber.com | 5400 W. Civic Center Drive Highland
+            City, UT
+            84003</div>
+
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        </div>
+        <div id="copy">
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                TayLynn Harman | Created as a project for WDD230
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
