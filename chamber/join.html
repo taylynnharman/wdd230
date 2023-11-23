@@ -45,47 +45,56 @@
             </ul>
         </nav>
     </header>
-    <div class="join-wrapper">
+    <div class="wrapper">
         <main class="join">
             <h1 class="joinheader">Join The Highland City Chamber of Commerce</h1>
             <form action="thankyou.html" method="get">
-                <label>First Name: <span class="required">*</span></label>
-                <input type="text" id="first" name="first" required>
+                <label>First Name: <span class="required">*</span>
+                    <input type="text" id="first" name="first" required>
+                </label>
                 <br>
 
-                <label>Last Name: <span class="required">*</span></label>
-                <input type="text" id="last" name="last" required>
+                <label>Last Name: <span class="required">*</span>
+                    <input type="text" id="last" name="last" required>
+                </label>
                 <br>
-                <label>Title/Position: </label>
-                <input type="text" id="position" name="position" required pattern="[A-Za-z -]{7,}"
-                    title="Must contain alpha characters, hyphens, and spaces (minimum of 7 characters).">
+                <label>Title/Position:
+                    <input type="text" id="position" name="position" pattern="[A-Za-z - ]{7,}"
+                        title="Must contain alpha characters, hyphens, and spaces (minimum of 7 characters).">
+                </label>
                 <br>
-                <label>Please enter a valid email address: <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                <label>Please enter a valid email address: <span class="required">*</span>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </label>
                 <br>
-                <label>Phone Number: <span class="required">*</span></label>
-                <input type="tel" id="phone" name="phone" required>
-                <br>
-
-                <label>Business/Organization's Name: <span class="required">*</span></label>
-                <input type="text" id="business" name="business" required>
-                <br>
-
-                <label for="membership">Membership Level (*see benefits):</label>
-                <select id="membership" name="membership">
-                    <option value="NP Membership">NP Membership (non-profit)</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select>
+                <label>Phone Number: <span class="required">*</span>
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
                 <br>
 
+                <label>Business/Organization's Name: <span class="required">*</span>
+                    <input type="text" id="business" name="business" required>
+                </label>
+                <br>
+
+                <label for="membership">Membership Level (*see benefits):
+                    <select id="membership" name="membership">
+                        <option value="NP Membership">NP Membership (non-profit)</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <br>
 
 
-                <label for="org_description">Business/Organization Description: </label>
-                <textarea id="org_description" name="org_description"></textarea>
 
-                <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+                <label for="org_description">Business/Organization Description:
+                    <textarea id="org_description" name="org_description"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
                 <input class="reg" type="submit" value="Join">
             </form>
             <div>
@@ -147,6 +156,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 
 </html>
