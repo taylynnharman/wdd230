@@ -1,5 +1,11 @@
-function setTimestamp() {
-    var timestampInput = document.getElementById('timestamp');
-    // Set the value to the current date/time in milliseconds
-    timestampInput.value = Date.now();
-}
+document.addEventListener("DOMContentLoaded", function() {
+
+    function setTimestamp() {
+        var timestampInput = document.getElementById("timestamp");
+        
+        timestampInput.value = Date.now();
+    }
+
+    // Call the setTimestamp function when the document is loaded
+    setTimestamp();
+});
