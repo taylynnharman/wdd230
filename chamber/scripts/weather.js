@@ -22,12 +22,25 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.textContent = `${data.main.temp}°F`;
-    headTemp.textContent = `${data.main.temp}°F`;
+    
+    if (currentTemp) {
+        currentTemp.textContent = `${data.main.temp}°F`;
+    } else {
+        console.log("No element with ID 'currentTemp' found on this page.");
+    }
+    if (headTemp) {
+        headTemp.textContent = `${data.main.temp}°F`;
+    } else {
+        console.log("No element with ID 'headTemp' found on this page.");
+    }
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let description = data.weather[0].description;
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', description);
-    captionDesc.textContent = description;
+    if (captionDesc) {
+        captionDesc.textContent = description;
+    } else {
+        console.log("No element with ID 'figcaption' found on this page.");
+    }
     
 }
