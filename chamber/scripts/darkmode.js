@@ -25,7 +25,7 @@ h2Elements.forEach(function(h2) {
 function disableDarkMode() {
   // Remove CSS classes or styles for dark mode
   document.body.classList.remove("dark-mode");
-  document.footer.classList.remove("dark-mode");
+  footer.classList.remove("dark-mode");
   h2Elements.forEach(function(h2) {
     h2.classList.remove("dark-mode");
     

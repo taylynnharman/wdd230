@@ -80,15 +80,21 @@ function forecastDisplayResults(forecastData) {
     // Reset Container
     container.innerHTML = '';
 
+    // Get current day of the week
+    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const today = new Date().getDay();
+
     // Loop through forecast data and create a card for each day
     for (let i = 0; i < 3; i++) {
-        const dayWeatherIcon = forecastData.list[i * 8].weather[0].icon; 
+        const dayWeatherIcon = forecastData.list[i * 8].weather[0].icon;
         const dayTemperature = forecastData.list[i * 8].main.temp.toFixed(0);
-        const dayDescription = forecastData.list[i * 8].weather[0].description; 
-        const dayCard = createForecastCard(dayWeatherIcon, dayTemperature, dayDescription);
+        const dayDescription = forecastData.list[i * 8].weather[0].description;
+        const weekday = weekdays[(today + 1+i) % 7]; // Adding i to get the next days
+        const dayCard = createForecastCard(dayWeatherIcon, dayTemperature, dayDescription, weekday);
         container.appendChild(dayCard);
     }
 }
+
 // Capitalize description
 function capitalizeFirstLetter(str) {
     return str.replace(/\b\w/g, (char) => char.toUpperCase());
@@ -96,7 +102,7 @@ function capitalizeFirstLetter(str) {
 
 // Create Day Card 
 // Add day of the week
-function createForecastCard(weatherIcon, temperature, description) {
+function createForecastCard(weatherIcon, temperature, description, weekday) {
     const card = document.createElement('div');
     card.classList.add('forecast-card');
 
@@ -111,10 +117,14 @@ function createForecastCard(weatherIcon, temperature, description) {
     description = capitalizeFirstLetter(description);
     descriptionElement.textContent = `${description}`;
 
+    const weekdayElement = document.createElement('h3');
+    weekdayElement.textContent = `${weekday}`;
+
+    card.appendChild(weekdayElement);
     card.appendChild(iconElement);
     card.appendChild(temperatureElement);
     card.appendChild(descriptionElement);
-
+    
 
     return card;
 }

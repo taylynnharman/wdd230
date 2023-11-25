@@ -46,13 +46,10 @@
         grid-column: 3 / 4;
     }
 
-    #weatherico {
-        width: 30px;
-        height: 30px;
-    }
-
-    #weatherdiv {
-        height: 500px;
+    #forecast {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .toggle {

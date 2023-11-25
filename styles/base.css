@@ -24,10 +24,13 @@ header {
 .hero img {
   width: 100%;
   height: auto;
+  text-align: center;
 }
+
 
 .hero {
   position: relative;
+  text-align: center;
 }
 
 .herolabel {
