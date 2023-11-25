@@ -1,7 +1,7 @@
-
+document.addEventListener("DOMContentLoaded", function() {
 const darkModeToggle = document.getElementById("mode");
 const footer = document.querySelector("footer");
-// Get all <h2> elements on the page
+const h3Elements = document.querySelectorAll("h3");
 const h2Elements = document.querySelectorAll("h2");
 const h1Elements = document.querySelectorAll("h1");
 const labelElements = document.querySelectorAll("label");
@@ -19,6 +19,10 @@ function enableDarkMode() {
   // Add CSS classes or styles for dark mode
   document.body.classList.add("dark-mode");
   footer.classList.add("dark-mode");
+  // Loop through each <h2> element and add the "dark-mode" class
+h3Elements.forEach(function(h3) {
+  h3.classList.add("dark-mode");
+});
 // Loop through each <h2> element and add the "dark-mode" class
 h2Elements.forEach(function(h2) {
   h2.classList.add("dark-mode");
@@ -42,6 +46,9 @@ function disableDarkMode() {
   // Remove CSS classes or styles for dark mode
   document.body.classList.remove("dark-mode");
   footer.classList.remove("dark-mode");
+  h3Elements.forEach(function(h3) {
+    h3.classList.remove("dark-mode");
+  });
   h2Elements.forEach(function(h2) {
     h2.classList.remove("dark-mode");
   });
@@ -55,3 +62,4 @@ function disableDarkMode() {
     membershipLevel.style.border = '2px solid var(--primary-color)';
   });
 }
+})

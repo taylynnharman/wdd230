@@ -59,12 +59,6 @@ nav {
     color: white;
 }
 
-h1.dark-mode,
-h2.dark-mode,
-label.dark-mode {
-    color: var(--text-color);
-}
-
 section {
     display: flex;
     /* Keeps sections items one on top of the other */
@@ -169,21 +163,6 @@ h6 {
     width: 28rem;
 }
 
-/* Swapped out h1 for image */
-.welcome h1 {
-    position: absolute;
-    color: var(--text-color);
-    font-size: 3vw;
-    text-align: center;
-    top: 7%;
-    transform: translate(6%, 0%);
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    left: 30%;
-}
-
 /* Carousel */
 * {
     box-sizing: border-box
@@ -272,7 +251,8 @@ h6 {
 }
 
 #eventsect {
-    display: block;
+    text-align: center;
+    margin-top: 50px;
 }
 
 #events {
@@ -442,33 +422,14 @@ input:checked+.slider:before {
 /* Rounded sliders */
 .slider.round {
     border-radius: 34px;
+
 }
 
 .slider.round:before {
     border-radius: 50%;
 }
 
-body.dark-mode {
-    background-color: #333;
-    /* Dark background color */
-    color: #fff;
-}
-
-h1.dark-mode,
-h2.dark-mode {
-    color: #fff;
-}
-
-footer.dark-mode {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
 /* DISCOVER */
-/* .card-img {
-    border: 30px solid var(--secondary-color);
-} */
-
 .page-visits {
     background: var(--secondary-color);
     color: var(--text-color);
@@ -477,13 +438,11 @@ footer.dark-mode {
     grid-row: 2/3;
 }
 
-.card-img img {
-    text-align: center;
-}
-
 .card-img {
-    /* Set caption color to white */
-    color: white;
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 5px;
+    background: var(--text-color);
 }
 
 section.dimg {
@@ -519,6 +478,19 @@ section.dimg {
     text-align: center;
 }
 
+.joinevents {
+    text-align: center;
+}
+
+.events h4 {
+    color: var(--text-color);
+    background: var(--secondary-color);
+    padding: 20px;
+}
+
+.events p {
+    margin: 30px;
+}
 
 /* Base styles for the image overlays */
 .image-overlay {
@@ -587,10 +559,7 @@ form {
     display: grid;
     padding: 40px;
     color: var(--secondary-color);
-    border: solid var(--accent1-color);
-    border-radius: 8px;
-    width: 25rem;
-    justify-self: center;
+    border: solid 2px var(--accent1-color);
     margin-bottom: 20px;
 }
 
@@ -761,4 +730,20 @@ h1 {
     text-align: center;
     align-items: center;
 
+}
+
+/* JS Added Classes */
+
+/* DarkMode */
+body.dark-mode,
+footer.dark-mode,
+h1.dark-mode,
+h3.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+label.dark-mode,
+h2.dark-mode {
+    color: var(--text-color);
 }
