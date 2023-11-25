@@ -129,6 +129,7 @@ h2 {
     display: grid;
     justify-items: center;
     margin-block: 20px;
+    padding: 15px;
 }
 
 
