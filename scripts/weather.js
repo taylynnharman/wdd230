@@ -21,10 +21,16 @@ async function apiFetch() {
 }
 apiFetch();
 
+//capitalize description
+function capitalizeFirstLetter(str) {
+    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
 function displayResults(data) {
-    currentTemp.textContent = `${data.main.temp}°F`;
+    currentTemp.textContent = `${Math.round(data.main.temp)}°F`;
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let description = data.weather[0].description;
+    description = capitalizeFirstLetter(description);
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', description);
     captionDesc.textContent = description;
