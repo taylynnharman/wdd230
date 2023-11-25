@@ -81,10 +81,15 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
         margin-inline: 40px;
+        grid-template-rows: auto auto auto;
     }
 
-    .events {
-        min-width: 300px;
+    #events img {
+        grid-row: 1/2;
+    }
+
+    #events h3 {
+        grid-row: 2/3
     }
 
     .button {

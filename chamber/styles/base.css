@@ -60,7 +60,8 @@ nav {
 }
 
 h1.dark-mode,
-h2.dark-mode {
+h2.dark-mode,
+label.dark-mode {
     color: var(--text-color);
 }
 
@@ -128,10 +129,14 @@ h2 {
     padding: 15px;
 }
 
-
 .banner {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
     text-align: center;
+    margin: 0px;
+    padding: 3px;
 }
+
 
 h1,
 h2,
@@ -165,7 +170,7 @@ h6 {
 }
 
 /* Swapped out h1 for image */
-/* .welcome {
+.welcome h1 {
     position: absolute;
     color: var(--text-color);
     font-size: 3vw;
@@ -177,7 +182,7 @@ h6 {
     border-radius: 10px;
     text-align: center;
     left: 30%;
-} */
+}
 
 /* Carousel */
 * {
@@ -272,13 +277,6 @@ h6 {
 
 #events {
     margin-inline: 40px;
-    display: block;
-}
-
-.events {
-    height: 300px;
-    background: var(--primary-color);
-    margin-block: 30px;
     display: block;
 }
 
@@ -456,6 +454,7 @@ body.dark-mode {
     color: #fff;
 }
 
+h1.dark-mode,
 h2.dark-mode {
     color: #fff;
 }
