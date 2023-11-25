@@ -40,6 +40,10 @@
         font-size: 2vw;
     }
 
+    .weather {
+        width: 80%;
+    }
+
     #weather {
         display: flex;
         padding-inline: 30px;
