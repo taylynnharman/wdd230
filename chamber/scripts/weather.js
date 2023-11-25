@@ -1,9 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 // variables
 const currentTemp = document.querySelector('#temp');
 const headTemp = document.querySelector('#headtemp');
 const weatherIcon = document.querySelector('#weather-icon');
+const weatherIconMain = document.querySelector('#weather-icon-main');
 const captionDesc = document.querySelector('figcaption');
-const forecast = document.querySelector('#forecast');
 
 // URLs
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.42&lon=-111.8&units=imperial&appid=aaa802f065623b257e44b95ccc9e87c0'
@@ -49,35 +51,72 @@ forecastApiFetch();
 function displayResults(data) {
     
     if (currentTemp) {
-        currentTemp.textContent = `${data.main.temp}°F`;
+        currentTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
     } else {
         console.log("No element with ID 'currentTemp' found on this page.");
     }
     if (headTemp) {
-        headTemp.textContent = `${data.main.temp}°F`;
+        headTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
     } else {
         console.log("No element with ID 'headTemp' found on this page.");
     }
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let description = data.weather[0].description;
+    let description = capitalizeFirstLetter(data.weather[0].description);
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', description);
+    weatherIconMain.setAttribute('src', iconSrc);
+    weatherIconMain.setAttribute('alt', description);
     if (captionDesc) {
         captionDesc.textContent = description;
     } else {
         console.log("No element with ID 'figcaption' found on this page.");
     }
 }
-    // Display Forecast
-    function forecastDisplayResults(forecastData) {
 
-        const dayOne = `${forecastData.list[8].main.feels_like.toFixed(0)} °F`;
-        const dayTwo = `${forecastData.list[16].main.feels_like.toFixed(0)} °F`;
-        const dayThree = `${forecastData.list[24].main.feels_like.toFixed(0)} °F`;
-        forecast.textContent = `${dayOne}, ${dayTwo}, ${dayThree}`;
-        // forecast.appendChild(dayOne);
-        // forecast.appendChild(dayTwo);
-        // forecast.appendChild(dayThree);
+// Display Forecast
+function forecastDisplayResults(forecastData) {
+    const container = document.querySelector('#forecast');
 
+    // Reset Container
+    container.innerHTML = '';
+
+    // Loop through forecast data and create a card for each day
+    for (let i = 0; i < 3; i++) {
+        const dayWeatherIcon = forecastData.list[i * 8].weather[0].icon; 
+        const dayTemperature = forecastData.list[i * 8].main.temp.toFixed(0);
+        const dayDescription = forecastData.list[i * 8].weather[0].description; 
+        const dayCard = createForecastCard(dayWeatherIcon, dayTemperature, dayDescription);
+        container.appendChild(dayCard);
     }
-    
+}
+// Capitalize description
+function capitalizeFirstLetter(str) {
+    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+// Create Day Card 
+// Add day of the week
+function createForecastCard(weatherIcon, temperature, description) {
+    const card = document.createElement('div');
+    card.classList.add('forecast-card');
+
+    const temperatureElement = document.createElement('span');
+    temperatureElement.textContent = `${temperature} °F`;
+
+    const iconElement = document.createElement('img');
+    iconElement.setAttribute('src', `https://openweathermap.org/img/w/${weatherIcon}.png`);
+    iconElement.setAttribute('alt', 'Weather Icon');
+
+    const descriptionElement = document.createElement('p');
+    description = capitalizeFirstLetter(description);
+    descriptionElement.textContent = `${description}`;
+
+    card.appendChild(iconElement);
+    card.appendChild(temperatureElement);
+    card.appendChild(descriptionElement);
+
+
+    return card;
+}
+
+});   

@@ -5,7 +5,7 @@
 
     header {
         display: grid;
-        grid-template-columns: 100px auto 130px 90px;
+        grid-template-columns: 100px auto auto 90px;
     }
 
     ul .navigation {
