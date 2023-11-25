@@ -6,15 +6,22 @@ function moveNavElement() {
     const header = document.querySelector('header');
     const nav = document.querySelector('nav');
 
+
     if (header && nav) {
         if (isNavMoved) {
             // If the navigation is already moved, move it back to the header
             header.appendChild(nav);
         } else {
             // If the navigation is in the header, move it to a new location
-            const main = document.querySelector('main');
-            if (main) {
-                header.parentNode.insertBefore(nav, main);
+            const wrapper = document.querySelector('.wrapper');
+            if (wrapper) {
+                header.parentNode.insertBefore(nav, wrapper);
+            } else {
+                // If there is no wrapper, fallback to moving it before main
+                const main = document.querySelector('main');
+                if (main) {
+                    header.parentNode.insertBefore(nav, main);
+                }
             }
         }
 

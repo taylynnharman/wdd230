@@ -101,7 +101,6 @@ function capitalizeFirstLetter(str) {
 }
 
 // Create Day Card 
-// Add day of the week
 function createForecastCard(weatherIcon, temperature, description, weekday) {
     const card = document.createElement('div');
     card.classList.add('forecast-card');
