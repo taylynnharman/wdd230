@@ -81,7 +81,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
         margin-inline: 40px;
-        grid-template-rows: auto auto auto;
     }
 
     .button {
@@ -101,7 +100,6 @@
         grid-template-rows: 1fr 50px;
         padding: 20px;
         font-size: 10pt;
-        margin-top: 40px;
     }
 
     .socials {
@@ -123,7 +121,7 @@
     }
 
     .card-img img:hover {
-        box-shadow: 0 0 50px #333;
+        box-shadow: 0 0 50px #acacac;
     }
 
     section:first-child,
@@ -133,23 +131,8 @@
 
     }
 
-    /* table {
-        grid-column: 2/3;
-    } */
-
     .dimg {
         grid-row: 1/10;
-        background: var(--secondary-color);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .card-img:nth-child(odd) {
-        grid-column: 2/3;
-    }
-
-    div.card-img caption {
-        text-align: center;
     }
 
     /* Join CSS */
