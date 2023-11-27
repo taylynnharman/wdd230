@@ -48,3 +48,27 @@ async function getMemberData() {
         cards.appendChild(card);
     });
   }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const gridModeToggle = document.getElementById("gridMode");
+  
+  gridModeToggle.addEventListener("change", function () {
+    if (this.checked) {
+      enableGrid();
+    } else {
+      enableList();
+    }
+  });
+  
+  // Add grid, remove list
+  function enableGrid() {
+    display.classList.add("directory");
+    display.classList.remove("list");
+  }
+  
+  // Add list function, remove grid
+  function enableList() {
+    display.classList.add("list");
+    display.classList.remove("directory");
+  }
+});

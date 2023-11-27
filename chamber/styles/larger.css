@@ -19,6 +19,10 @@
         color: var(--text-color);
     }
 
+    .button {
+        top: 70%;
+    }
+
     .navigation li {
         display: none;
         max-width: 145px;
@@ -122,13 +126,6 @@
 
     .card-img img:hover {
         box-shadow: 0 0 50px #acacac;
-    }
-
-    section:first-child,
-    section:nth-child(2),
-    section:nth-child(3) {
-        grid-column: 1/2;
-
     }
 
     .dimg {

@@ -65,6 +65,7 @@ section {
     align-items: center;
 }
 
+h1,
 h2 {
     text-align: center;
 }
@@ -87,6 +88,16 @@ h2 {
     color: var(--text-color);
 }
 
+.currentweather {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
 .weather {
     display: grid;
     background-color: var(--primary-color);
@@ -99,13 +110,9 @@ h2 {
 }
 
 .weather figure {
-    font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-top: 0px;
-    gap: 30px;
-    justify-content: center;
-    text-align: center;
+    gap: 50px;
 }
 
 #forecast {
@@ -121,6 +128,12 @@ h2 {
     justify-items: center;
     margin-block: 20px;
     padding: 15px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
 }
 
 .banner {
@@ -236,7 +249,7 @@ h6 {
     font-size: 20px;
     padding: 17px 28px;
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, 20%);
     cursor: pointer;
@@ -546,7 +559,9 @@ label {
     max-width: 20rem;
     border-radius: 4px;
     border: solid 1px;
+    width: 100%;
 }
+
 
 form {
     display: grid;
@@ -711,19 +726,12 @@ body {
     padding: 0;
 }
 
-main .thankyou {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    flex: 1;
-
+/* directory.html */
+main.directory {
+    margin-inline: 40px;
 }
 
-h1 {
-    text-align: center;
-    align-items: center;
-
-}
+.directoryList {}
 
 /* JS Added Classes */
 
@@ -740,3 +748,6 @@ label.dark-mode,
 h2.dark-mode {
     color: var(--text-color);
 }
+
+/* directory.html */
+.directoryList {}
