@@ -109,16 +109,6 @@ td {
     margin-bottom: 30px;
 }
 
-.weather figure {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-#forecast {
-    padding-inline: 33px;
-}
-
 .forecast-card {
     background: var(--text-color);
     color: var(--headline-color-on-white);
@@ -128,6 +118,16 @@ td {
     justify-items: center;
     margin-block: 20px;
     padding: 15px;
+}
+
+.weather figure {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#forecast {
+    padding-inline: 33px;
 }
 
 #cards {
@@ -272,14 +272,6 @@ h6 {
     display: block;
 }
 
-#weatherdiv {
-    padding: 30px;
-    height: 300px;
-    width: 60%;
-    background: var(--primary-color);
-    font-size: 1.5em;
-    color: var(--text-color);
-}
 
 .forecast-card h3 {
     color: var(--accent1-color);
@@ -368,6 +360,13 @@ footer {
     grid-row: 2/3;
     grid-column: 2/5;
     margin-top: 10px;
+}
+
+.grid-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline: 85px;
+    place-items: center;
 }
 
 .toggle {
@@ -739,13 +738,20 @@ h2.dark-mode {
 #cards.list {
     display: flex;
     flex-direction: column;
+
 }
 
 #cards.list section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
 }
 
 #cards.list img {
     display: none;
+}
+
+.list h2 {
+    font-size: 1rem;
 }
