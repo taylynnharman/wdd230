@@ -30,13 +30,13 @@ async function getMemberData() {
         website.target = '_blank'; 
         membership.textContent = `${member.membership}`; 
         name.textContent = `${member.name}`; 
-        
+
         // Build the image portrait by setting all the relevant attributes
         logo.setAttribute('src', `${member.image}`);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '300');
-        logo.setAttribute('height', '300');
+        logo.setAttribute('height', 'auto');
 
         card.appendChild(name); 
         card.appendChild(logo); 
