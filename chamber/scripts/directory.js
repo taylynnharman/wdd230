@@ -32,10 +32,10 @@ async function getMemberData() {
         // fill in the blank
         // Build the image portrait by setting all the relevant attributes
         logo.setAttribute('src', member.image);
-        logo.setAttribute('alt', `${member.name} logo`); 
+        logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '340');
-        logo.setAttribute('height', '440');
+        logo.setAttribute('width', '300');
+        logo.setAttribute('height', '300');
         // Build Div
         contacts.appendChild(address); 
         contacts.appendChild(phone); 
@@ -49,26 +49,26 @@ async function getMemberData() {
     });
   }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const gridModeToggle = document.getElementById("gridMode");
-  
-  gridModeToggle.addEventListener("change", function () {
-    if (this.checked) {
-      enableGrid();
-    } else {
-      enableList();
+  document.addEventListener("DOMContentLoaded", function () {
+    const gridModeToggle = document.getElementById("gridMode");
+
+    gridModeToggle.addEventListener("change", function () {
+        if (this.checked) {
+            enableList();
+        } else {
+            enableGrid();
+        }
+    });
+
+    // Add grid, remove list
+    function enableGrid() {
+        cards.classList.add("grid"); // Add a class for grid view
+        cards.classList.remove("list"); // Remove the class for list view
     }
-  });
-  
-  // Add grid, remove list
-  function enableGrid() {
-    display.classList.add("directory");
-    display.classList.remove("list");
-  }
-  
-  // Add list function, remove grid
-  function enableList() {
-    display.classList.add("list");
-    display.classList.remove("directory");
-  }
+
+    // Add list function, remove grid
+    function enableList() {
+        cards.classList.add("list"); // Add a class for list view
+        cards.classList.remove("grid"); // Remove the class for grid view
+    }
 });
