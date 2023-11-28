@@ -10,6 +10,6 @@ const today = new Date().getDay();
         banner.style.display = "none";
     }
     closeButton.addEventListener('click', () => {
-        banner.classList.toggle('close');
+        banner.style.display = "none";
     });
 

@@ -14,37 +14,41 @@ async function getMemberData() {
   const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
-        let name = document.createElement('h2'); 
+        let name = document.createElement('h3'); 
         let logo = document.createElement('img');
-        let contacts = document.createElement('div'); 
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
         let membership = document.createElement('p');
     
         // Build the h2 content out to show the member's full name
         name.textContent = `${member.name}`; 
         address.textContent = `${member.address}`; 
         phone.textContent = `${member.phone}`; 
-        website.textContent = `${member.website}`; 
+        website.href = member.website; 
+        website.textContent = `${member.website}`;
+        website.target = '_blank'; 
         membership.textContent = `${member.membership}`; 
         name.textContent = `${member.name}`; 
         // fill in the blank
         // Build the image portrait by setting all the relevant attributes
-        logo.setAttribute('src', member.image);
+        logo.setAttribute('src', `${member.image}`);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '300');
         logo.setAttribute('height', '300');
         // Build Div
-        contacts.appendChild(address); 
-        contacts.appendChild(phone); 
-        contacts.appendChild(website); 
-        contacts.appendChild(membership); 
+        // contacts.appendChild(address); 
+        // contacts.appendChild(phone); 
+        // contacts.appendChild(website); 
+        // contacts.appendChild(membership); 
         // Append the section(card) with the created elements
         card.appendChild(name); 
         card.appendChild(logo); 
-        card.appendChild(contacts); 
+        card.appendChild(address); 
+        card.appendChild(phone); 
+        card.appendChild(website); 
+        card.appendChild(membership); 
         cards.appendChild(card);
     });
   }

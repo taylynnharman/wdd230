@@ -143,4 +143,9 @@
         margin-inline: 9rem;
         gap: 40px;
     }
+
+    #cards.list section {
+        display: grid;
+        grid-template-columns: 4fr 4fr auto 3fr 1fr;
+    }
 }

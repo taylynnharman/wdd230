@@ -426,7 +426,7 @@ input:focus+.slider {
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(22px);
 }
 
 /* Rounded sliders */
@@ -727,31 +727,41 @@ h2.dark-mode {
 }
 
 /* directory.html */
-/* Add styles for grid view */
-#cards.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
 
 /* Add styles for list view */
 #cards.list {
     display: flex;
     flex-direction: column;
+    gap: 0px;
 
 }
 
 #cards.list section {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
+    place-items: center;
+    font-size: small;
+    padding-inline: 30px;
+
 }
 
 #cards.list img {
     display: none;
 }
 
-.list h2 {
-    font-size: 1rem;
+#cards a {
+    color: var(--accent1-color);
+}
+
+#cards a:hover {
+    color: var(--text);
+}
+
+.list section:nth-child(even),
+#cards.list h2:nth-child(even) {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: .75rem;
+}
+
+main {
+    flex-grow: 1;
 }

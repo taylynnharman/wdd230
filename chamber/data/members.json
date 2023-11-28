@@ -1,23 +1,25 @@
 {"members": [
     {
         "name": "Dirt Gear Co.",
-        "address": "5353 W 11000 N, Highland, UT 84003",
+        "address": "5353 W 11000 N, Highland",
         "phone": "(801) 763-8044",
         "website": "https://dirtgearco.com/",
-        "image": "../images/dgco.webp",
+        "image": "images/dgco.webp",
         "membership": "Gold"
     },
     {
         "name": "Painted Daisy Floral",
-        "address": "5435 W 11000 N Ste 15 Highland, UT 84003",
+        "address": "5435 W 11000 N Ste 15 Highland",
         "phone": "(801) 763-8721",
         "website": "https://www.painteddaisyflorist.com/",
         "image": "../images/painteddaisy.webp",
         "membership": "Silver"
+
+
     },
     {
         "name": "Courage Reins",
-        "address": "5870 W 10400 N, Ste. C. Highland, UT 84003",
+        "address": "5870 W 10400 N, Ste. C. Highland",
         "phone": "(801) 756-8900",
         "website": "https://couragereins.org/",
         "image": "../images/couragereins.png",
@@ -25,7 +27,7 @@
     },
     {
         "name": "North Pointe Dental LLC",
-        "address": "10290 N County Blvd Ste 101 Highland, UT 84003",
+        "address": "10290 N County Blvd Ste 101 Highland",
         "phone": "801-805-1931 ",
         "website": "https://www.northpointe.dental/",
         "image": "../images/dental.webp",
@@ -33,7 +35,7 @@
     },
     {
         "name": "Twirl Boutique",
-        "address": "UT-92, Highland, UT 84003",
+        "address": "UT-92, Highland",
         "phone": "(385) 498-3426",
         "website": "https://shoptwirlco.com/",
         "image": "../images/twirl.avif",
@@ -41,7 +43,7 @@
     },
     {
         "name": "Rad Swimwear, LLC",
-        "address": "5509 W 11000 N Highland, UT 84003",
+        "address": "5509 W 11000 N Highland",
         "phone": "(801) 803-3520",
         "website": "https://radswim.com/",
         "image": "../images/RAD.avif",
@@ -49,7 +51,7 @@
     },
     {
         "name": "Meires Meats and Fine Foods",
-        "address": "5521 UT-92 #133, Highland, UT 84003",
+        "address": "5521 UT-92 #133, Highland",
         "phone": "(801) 642-2069",
         "website": "https://www.meiersmeats.com/",
         "image": "../images/meiers.png",
