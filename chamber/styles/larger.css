@@ -144,6 +144,12 @@
         gap: 40px;
     }
 
+    #cards section {
+        display: grid;
+        grid-template-rows: 40px 200px 30px 30px 30px;
+        place-items: center;
+    }
+
     #cards.list section {
         display: grid;
         grid-template-columns: 4fr 4fr auto 3fr 1fr;
