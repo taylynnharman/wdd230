@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #3c3c39;
+    --secondary-color: #004736;
+    --accent1-color: #4487ae;
+    --text-color: white;
+    --heading-font: "Raleway", "PT Serif", "Lato";
+    --paragraph-font: "Libre Baskerville", "Tahoma", "verdana";
+    --headline-color-on-white: #3c3c39;
+}

@@ -30,19 +30,14 @@ async function getMemberData() {
         website.target = '_blank'; 
         membership.textContent = `${member.membership}`; 
         name.textContent = `${member.name}`; 
-        // fill in the blank
+        
         // Build the image portrait by setting all the relevant attributes
         logo.setAttribute('src', `${member.image}`);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '300');
         logo.setAttribute('height', '300');
-        // Build Div
-        // contacts.appendChild(address); 
-        // contacts.appendChild(phone); 
-        // contacts.appendChild(website); 
-        // contacts.appendChild(membership); 
-        // Append the section(card) with the created elements
+
         card.appendChild(name); 
         card.appendChild(logo); 
         card.appendChild(address); 
