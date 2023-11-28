@@ -1,5 +1,5 @@
 // 
-const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/chamber/data/members.json";
+const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/chamber/data/members.json";
     const memberCards = document.getElementById('memberCards');
     let goldMembers = [];
 
