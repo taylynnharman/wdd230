@@ -16,7 +16,46 @@
     <!-- <link rel="icon" href="images/favicon.ico"> -->
     <title>Scoots - Contacts</title>
 </head>
-The Contact page will contain:
-essential contact information,
-an embedded Google map showing the two locations on Cozumel, and
-a basic contact us form with name, email, and comment.
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <button id="menu" title="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h1>How can we help?</h1>
+        <p>If you have concerns, comments, or questions, don't hesitate to reach out at (444) 333-6666 or
+            email us at info@scoots.com. You can also fill out a contact form to the right and we'll get back to you as
+            soon as
+            possible! Thanks!</p>
+        <form action="received.html" method="get">
+            <label>Name: <span class="required">*</span>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            </label>
+            <br>
+
+            <label>Email: <span class="required">*</span>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </label>
+            <br>
+            <label>Comment<span class="required">*</span>
+                <input type="text" id="comment" name="comment" placeholder="Enter Text Here..." required>
+            </label>
+            <br>
+            <input id="send" type="submit" value="Send">
+        </form>
+    </main>
+</body>
+
+</html>
+
+<!-- an embedded Google map showing the two locations on Cozumel, and -->

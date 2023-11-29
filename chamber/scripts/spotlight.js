@@ -4,15 +4,9 @@ const memberCards = document.getElementById('memberCards');
 
 
     async function getMemberData() {
-        try {
-            console.log('calling');
             const response = await fetch(url);
             const data = await response.json();
-            console.table(data.members);
             displaySpotlight(data.members);
-        } catch (error) {
-            console.error('Error fetching member data:', error);
-        }
     }
 
     //filter out gold members
@@ -32,12 +26,7 @@ const memberCards = document.getElementById('memberCards');
     function createMemberCard(member) {
         let div = document.createElement('div');
         div.classList.add('mySlides', 'fade');
-        console.log("Div Created")
 
-        // let slide = 1;
-        // let numberDiv = document.createElement('div');
-        // numberDiv.classList.add('numbertext');
-        // numberDiv.textContent = `${slide}/3`;
 
         let image = document.createElement('img');
         image.src = member.spotlight;
@@ -56,7 +45,6 @@ const memberCards = document.getElementById('memberCards');
     function createSpotlights() {
             let container = document.createElement('div');
             const randomGoldMembers = pickRandomMembers(goldMembers, 3);
-            console.log('Random Gold Members', randomGoldMembers);
             randomGoldMembers.forEach(member => {
                 const memberCard = createMemberCard(member);
                 container.appendChild(memberCard);
@@ -66,7 +54,6 @@ const memberCards = document.getElementById('memberCards');
 
         function displaySpotlight(members) {
             goldMembers = filterMembers(members);
-            console.log('Filtered gold members:', goldMembers);
             
             // Create spotlights and append them to memberCards
             const spotlights = createSpotlights();
