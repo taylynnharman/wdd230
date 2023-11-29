@@ -25,7 +25,8 @@
         "phone": "(801) 756-8900",
         "website": "https://couragereins.org/",
         "image": "images/couragereins.webp",
-        "membership": "Non-Profit"
+        "membership": "Non-Profit",
+        "spotlight": "images/couragereins.webp"
     },
     {
         "name": "North Pointe Dental LLC",
@@ -51,7 +52,8 @@
         "phone": "(801) 803-3520",
         "website": "https://radswim.com/",
         "image": "images/RAD.webp",
-        "membership": "Bronze"
+        "membership": "Bronze",
+        "spotlight": "images/RAD.webp"
     },
     {
         "name": "Meires Meats and Fine Foods",
@@ -59,6 +61,7 @@
         "phone": "(801) 642-2069",
         "website": "https://www.meiersmeats.com/",
         "image": "images/meiers.webp",
-        "membership": "Gold"
+        "membership": "Gold",
+        "spotlight": "images/meiers.webp"
     }
 ]}

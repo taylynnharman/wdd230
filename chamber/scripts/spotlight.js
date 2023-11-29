@@ -1,7 +1,7 @@
-// 
-const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/chamber/data/members.json";
-    const memberCards = document.getElementById('memberCards');
-    let goldMembers = [];
+//Pull Data from github
+const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/chamber/data/members.json"
+const memberCards = document.getElementById('memberCards');
+
 
     async function getMemberData() {
         try {
@@ -15,6 +15,7 @@ const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/chamber/data
         }
     }
 
+    //filter out gold members
     function filterMembers(members) {
         return members.filter(member => member.membership === "Gold");
     }
@@ -59,6 +60,7 @@ const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/chamber/data
 
     function displaySpotlight(members) {
         goldMembers = filterMembers(members);
+        console.log('Filtered gold members:', goldMembers);
         memberCards.appendChild(createSpotlights());
     }
 
