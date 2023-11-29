@@ -20,9 +20,13 @@ const memberCards = document.getElementById('memberCards');
         return members.filter(member => member.membership === "Gold");
     }
 
-    function pickRandomMember(members) {
-        const randomIndex = Math.floor(Math.random() * members.length);
-        return members[randomIndex];
+    function pickRandomMembers(members, count) {
+        const randomMembers = [];
+        for (let i = 0; i < count; i++) {
+            const randomIndex = Math.floor(Math.random() * members.length);
+            randomMembers.push(members.splice(randomIndex, 1)[0]);
+        }
+        return randomMembers;
     }
 
     function createMemberCard(member) {
@@ -48,17 +52,17 @@ const memberCards = document.getElementById('memberCards');
         return div;
     }
 
+
     function createSpotlights() {
-        let container = document.createElement('div');
-        const goldMembers = filterMembers();
-        for (let i = 0; i < 3; i++) {
-            const randomMember = pickRandomMember(goldMembers);
-            console.log('Random Member', randomMember)
-            const memberCard = createMemberCard(randomMember);
-            container.appendChild(memberCard);
+            let container = document.createElement('div');
+            const randomGoldMembers = pickRandomMembers(goldMembers, 3);
+            console.log('Random Gold Members', randomGoldMembers);
+            randomGoldMembers.forEach(member => {
+                const memberCard = createMemberCard(member);
+                container.appendChild(memberCard);
+            });
+            return container;
         }
-        return container;
-    }
 
     function displaySpotlight(members) {
         goldMembers = filterMembers(members);
