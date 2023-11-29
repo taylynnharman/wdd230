@@ -28,11 +28,12 @@ const memberCards = document.getElementById('memberCards');
     function createMemberCard(member) {
         let div = document.createElement('div');
         div.classList.add('mySlides', 'fade');
+        console.log("Div Created")
 
-        let slide = 1;
-        let numberDiv = document.createElement('div');
-        numberDiv.classList.add('numbertext');
-        numberDiv.textContent = `${slide}/3`;
+        // let slide = 1;
+        // let numberDiv = document.createElement('div');
+        // numberDiv.classList.add('numbertext');
+        // numberDiv.textContent = `${slide}/3`;
 
         let image = document.createElement('img');
         image.src = member.spotlight;
@@ -41,7 +42,7 @@ const memberCards = document.getElementById('memberCards');
         image.width = '300';
         image.height = '300';
 
-        div.appendChild(numberDiv);
+        // div.appendChild(numberDiv);
         div.appendChild(image);
 
         return div;
@@ -52,6 +53,7 @@ const memberCards = document.getElementById('memberCards');
         const goldMembers = filterMembers();
         for (let i = 0; i < 3; i++) {
             const randomMember = pickRandomMember(goldMembers);
+            console.log('Random Member', randomMember)
             const memberCard = createMemberCard(randomMember);
             container.appendChild(memberCard);
         }
