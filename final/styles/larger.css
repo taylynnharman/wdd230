@@ -1,3 +1,26 @@
-#menu {
-    display: none;
+@media screen and (min-width: 600px) {
+
+    /* Header */
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        background: var(--primary-color);
+        justify-content: center;
+    }
+
+    .navigation a {
+        width: 150px;
+    }
+
+    .navigation li {
+        display: flex;
+    }
+
+    /* Main */
+    div.vehicle-card {
+        grid-column: 1/13;
+    }
 }
