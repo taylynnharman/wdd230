@@ -1,9 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@500&family=Fauna+One&display=swap');
+
 :root {
-    --primary-color: #3c3c39;
-    --secondary-color: #004736;
-    --accent1-color: #4487ae;
-    --text-color: white;
-    --heading-font: "Raleway", "PT Serif", "Lato";
-    --paragraph-font: "Libre Baskerville", "Tahoma", "verdana";
-    --headline-color-on-white: #3c3c39;
+    --primary-color: #2A4739;
+    --secondary-color: #202020;
+    --text-color: #FFFFFF;
+    --heading-font: "Cinzel", "PT Serif", "Lato";
+    --paragraph-font: "Fauna One", "Tahoma", "verdana";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+h1 {
+    grid-column: 1/13;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #FFB43C;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    background: var(--primary-color);
+    list-style: none;
+    gap: 50px;
+    padding-block: 10px;
+    margin: 0px;
+}
+
+.navigation a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 20px;
+}
+
+.fa {
+    padding: 12px;
+    font-size: 21px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 56%;
+    color: var(--text-color);
+    margin: 4px;
+    border: solid 2px;
+}
+
+.vehicle-card {
+    display: grid;
+}
+
+/* Add a hover effect*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.socials {
+    margin: 15px;
 }

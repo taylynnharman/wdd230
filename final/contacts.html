@@ -11,6 +11,7 @@
     <meta property="og:title" content="Scoots - Contacts">
     <!-- <meta property="og:image" content="https://extension.usu.edu/efnep/images/utah-valley.jpg"> -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <!-- <link rel="icon" href="images/favicon.ico"> -->
@@ -19,7 +20,7 @@
 
 <body>
     <header>
-
+        <img class="logo" src="images/scoots.png" alt="scoots logo">
     </header>
     <nav>
         <button id="menu" title="menu"></button>
@@ -33,11 +34,13 @@
     </nav>
     <main>
         <h1>How can we help?</h1>
+        <!-- Necessary Contact Info -->
         <p>If you have concerns, comments, or questions, don't hesitate to reach out at (444) 333-6666 or
             email us at info@scoots.com. You can also fill out a contact form to the right and we'll get back to you as
             soon as
             possible! Thanks!</p>
-        <form action="received.html" method="get">
+        <!-- Contact Form with Name, Email, Comment -->
+        <form action="contacts-received.html" method="get">
             <label>Name: <span class="required">*</span>
                 <input type="text" id="name" name="name" placeholder="John Doe">
             </label>
@@ -53,9 +56,26 @@
             <br>
             <input id="send" type="submit" value="Send">
         </form>
+        <!-- an embedded Google map showing the two locations on Cozumel, and -->
     </main>
+    <footer>
+        <p>(444) 333-6666 | info@scoots.com </p>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        </div>
+        <div id="copy">
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                TayLynn Harman | Created as a project for WDD230 | <a href="references.html">References</a>
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>
-
-<!-- an embedded Google map showing the two locations on Cozumel, and -->

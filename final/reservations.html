@@ -11,6 +11,7 @@
     <meta property="og:title" content="Scoots - Reservations">
     <!-- <meta property="og:image" content="https://extension.usu.edu/efnep/images/utah-valley.jpg"> -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <!-- <link rel="icon" href="images/favicon.ico"> -->
@@ -19,7 +20,7 @@
 
 <body>
     <header>
-
+        <img class="logo" src="images/scoots.png" alt="scoots logo">
     </header>
     <nav>
         <button id="menu" title="menu"></button>
@@ -31,12 +32,146 @@
 
         </ul>
     </nav>
+
+    <main>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Rental Details Form</title>
+        </head>
+
+        <body>
+
+            <h1>Rental Details Form</h1>
+
+            <form action="res-received.html" method="get">
+
+                <!-- Date and Period -->
+                <label for="rentalDate">Rental Date:</label>
+                <input type="date" id="rentalDate" name="rentalDate" required>
+
+                <label for="rentalPeriod">Rental Period:</label>
+                <select id="rentalPeriod" name="rentalPeriod" required>
+                    <option value="halfDay">Half Day (3 hrs)</option>
+                    <option value="fullDay">Full Day</option>
+                </select>
+
+                <!-- Rental Type and Number -->
+                <label for="rentalType">Rental Type:</label>
+                <input type="text" id="rentalType" name="rentalType" required>
+
+                <label for="numberOfRentals">Number of Rentals:</label>
+                <input type="number" id="numberOfRentals" name="numberOfRentals" min="1" required>
+
+                <!-- Contact Information -->
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Location Information -->
+                <label for="location">Home State or Country:</label>
+                <input type="text" id="location" name="location" required>
+
+                <!-- Cruise Line and Special Accommodations -->
+                <label for="cruiseLine">Cruise Line (if applicable):</label>
+                <input type="text" id="cruiseLine" name="cruiseLine">
+
+                <label for="specialAccommodations">Special Accommodations/Comments:</label>
+                <textarea id="specialAccommodations" name="specialAccommodations" rows="4"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Reserve</button>
+            </form>
+            <!-- rental agreement information -->
+            <div>
+                **VEHICLE RENTAL AGREEMENT**
+
+                This Vehicle Rental Agreement ("Agreement") is entered into between [Company Name], hereinafter referred
+                to as the "Company," and the undersigned, hereinafter referred to as the "Renter."
+
+                **1. VEHICLE INFORMATION:**
+                a. Make and Model: [Vehicle Make and Model]
+                b. License Plate Number: [License Plate Number]
+                c. Vehicle Identification Number (VIN): [VIN]
+                d. Rental Period: [Start Date] to [End Date]
+                e. Rental Type: [Half Day / Full Day / Other]
+
+                **2. RENTAL FEES:**
+                a. The Renter agrees to pay the total rental fee of [Total Amount] for the specified rental period.
+                b. Payment Method: [Credit Card / Cash / Other]
+
+                **3. SECURITY DEPOSIT:**
+                a. The Renter agrees to provide a security deposit of [Security Deposit Amount].
+                b. The security deposit will be refunded upon the return of the vehicle in the same condition it was
+                rented.
+
+                **4. USE OF VEHICLE:**
+                a. The Renter agrees to use the vehicle only for legal and lawful purposes.
+                b. The Renter shall not sublease or allow any other person to drive the vehicle.
+
+                **5. INSURANCE:**
+                a. The Company provides insurance coverage as follows: [Details of Insurance Coverage].
+                b. The Renter is responsible for any damage or loss not covered by insurance during the rental period.
+
+                **6. MAINTENANCE AND REPAIRS:**
+                a. The Renter agrees to notify the Company promptly of any mechanical issues or damage to the vehicle.
+                b. The Company will cover the costs of routine maintenance; however, the Renter is responsible for
+                damage caused by misuse.
+
+                **7. RETURN OF VEHICLE:**
+                a. The Renter agrees to return the vehicle by [Return Time] on the specified return date.
+                b. Late returns may incur additional charges.
+
+                **8. CANCELLATION POLICY:**
+                a. The Renter may cancel the reservation up to [Cancellation Period] in advance without penalty.
+                b. Cancellations made within [Cancellation Period] may be subject to a cancellation fee.
+
+                **9. GOVERNING LAW:**
+                a. This Agreement shall be governed by the laws of [State/Country].
+
+                **10. ENTIRE AGREEMENT:**
+                a. This Agreement constitutes the entire understanding between the Company and the Renter and supersedes
+                any prior agreements.
+
+                **IN WITNESS WHEREOF,** the parties hereto have executed this Vehicle Rental Agreement as of the date
+                first above written.
+
+                _________________________ _________________________
+                [Company Name] (Company) [Renter's Name] (Renter)
+
+                Date: ________________
+            </div>
+
+        </body>
+
+        </html>
+    </main>
+    <footer>
+        <p>(444) 333-6666 | info@scoots.com </p>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        </div>
+        <div id="copy">
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                TayLynn Harman | Created as a project for WDD230 | <a href="references.html">References</a>
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>
-The Reservations page that contains:
-rental agreement information, and
-a valid form that collects rental details such as the date, period, rental type, number, phone number, name, email, home
-state or country, cruise line if applicable, and special accommodations/comments such as the need and location of a
-drop-off request.
-Use CSS Grid and/or CSS Flex to design the layout.

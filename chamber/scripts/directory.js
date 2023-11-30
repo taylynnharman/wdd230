@@ -2,10 +2,8 @@ const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/chamber
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    console.log('calling');
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.members);
     displayMembers(data.members)
   }
 
