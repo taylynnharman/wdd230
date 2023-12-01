@@ -26,18 +26,26 @@
     main {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 100px;
     }
 
     div.vehicle-card {
         grid-column: 1/13;
     }
 
-    /* Contacts */
+    /* contact.html and reservation.html */
+    .reservations div {
+        grid-column: 7/11;
+        margin-left: 45px;
+    }
+
     .contacts p {
         grid-column: 7/11;
         margin-top: 115px;
         margin-left: 45px;
+    }
+
+    .reservations form {
+        grid-column: 2/6;
     }
 
     form {

@@ -141,6 +141,10 @@ footer {
     line-height: 2rem;
 }
 
+.reservations p {
+    font-size: 12px;
+}
+
 form {
     background: var(--primary-color);
     color: var(--text-color);
@@ -152,7 +156,7 @@ form {
 
 input,
 textarea,
-button {
+button.form {
     width: -webkit-fill-available;
     border-radius: 8px;
     border: none;
@@ -160,7 +164,7 @@ button {
     margin-block: 10px;
 }
 
-button {
+button.form {
     font-size: 20px;
     font-family: var(--heading-font);
     background: var(--secondary-color);
