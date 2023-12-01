@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@500&family=Fauna+One&display=swap');
 
 :root {
-    --primary-color: #2A4739;
+    --primary-color: #103B42;
     --secondary-color: #202020;
     --text-color: #FFFFFF;
     --heading-font: "Cinzel", "PT Serif", "Lato";
@@ -128,9 +128,9 @@ footer {
 
 /* rental.html */
 .vehicle-card {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--text-color);
-    height: 426px;
+    height: fit-content;
     margin-bottom: 45px;
     padding: 13px;
 }
@@ -184,4 +184,18 @@ iframe {
     width: 100%;
     padding: 0;
     margin-bottom: 45px;
+}
+
+
+.banner {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    font-size: small;
+    margin: initial;
+    line-height: 2.5;
+
+}
+
+img {
+    width: 100%;
 }

@@ -1,5 +1,5 @@
 const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/final/data/prices.json";
-const rentalsContainer = document.querySelector('#rentals');
+const summaryContainer = document.querySelector('#summary');
 
 async function getData() {
   try {
@@ -29,16 +29,14 @@ function createVehicleCard(vehicle) {
   const title = document.createElement('h2');
   title.textContent = vehicle.vehicle;
 
-  const persons = document.createElement('p');
-  persons.textContent = `Persons: ${vehicle.persons}`;
+  const summary = document.createElement('p');
+  summary.textContent = vehicle.summary;
+
+
 
   const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
   const reservation = document.createElement('p');
   reservation.textContent = `Reservation Prices: ${reservationPrices}`;
-
-  const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
-  const walkin = document.createElement('p');
-  walkin.textContent = `Walk-in Prices: ${walkinPrices}`;
 
   const reserveButton = document.createElement('button');
   reserveButton.textContent = 'Reserve';
@@ -52,20 +50,32 @@ function createVehicleCard(vehicle) {
   });
   div.appendChild(image);
   div.appendChild(title);
-  div.appendChild(persons);
-  div.appendChild(reservation);
-  div.appendChild(walkin);
+div.appendChild(summary);
   div.appendChild(reserveButton);
 
   return div;
 }
 
-function displayVehicles(vehicles) {
-  rentalsContainer.innerHTML = ''; // Clear previous content
-
-  vehicles.forEach(vehicle => {
-    const vehicleCard = createVehicleCard(vehicle);
-    rentalsContainer.appendChild(vehicleCard);
-  });
-}
-
+function displayVehicles(rentals) {
+        summaryContainer.innerHTML = ''; // Clear previous content
+      
+        rentals.forEach(rentalCategory => {
+          const rentalTypeHeading = document.createElement('h2');
+          rentalTypeHeading.textContent = rentalCategory.rentalType || 'Unknown';
+          summaryContainer.appendChild(rentalTypeHeading);
+      
+          const firstVehicle = rentalCategory.vehicles[0]; // Get the first vehicle in the category
+      
+          if (firstVehicle) {
+            const vehicleCard = createVehicleCard({
+              vehicle: rentalCategory.rentalType,
+              persons: firstVehicle.persons,
+              image: firstVehicle.image,
+              summary: firstVehicle.summary,
+            });
+      
+            summaryContainer.appendChild(vehicleCard);
+          }
+        });
+      }
+      

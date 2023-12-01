@@ -56,4 +56,13 @@
         grid-row: 3/4;
         grid-column: 3/11;
     }
+
+    .banner {
+        grid-column: 1/13;
+    }
+
+    img {
+        grid-column: 1/13;
+        z-index: -1;
+    }
 }

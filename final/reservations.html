@@ -50,8 +50,11 @@
             <form action="res-received.html" method="get">
 
                 <!-- Date and Period -->
-                <label for="rentalDate">Rental Date<span class="required">*</span>:</label>
-                <input type="date" id="rentalDate" name="rentalDate" required>
+                <label for="startDate">Rental Pickup Date<span class="required">*</span>:</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label for="endDate">Rental Return Date<span class="required">*</span>:</label>
+                <input type="date" id="endDate" name="endDate" required>
                 <br>
                 <label for="rentalPeriod">Rental Period<span class="required">*</span>:</label>
                 <select id="rentalPeriod" name="rentalPeriod" required>
@@ -87,6 +90,7 @@
                 <label for="specialAccommodations">Special Accommodations/Comments:</label>
                 <textarea id="specialAccommodations" name="specialAccommodations" rows="4"></textarea>
                 <br>
+                <!-- <span id="total">Estimated Total:</span> -->
                 <!-- Submit Button -->
                 <button class="form" type="submit">Reserve</button>
             </form>
@@ -160,6 +164,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/reservation.js"></script>
 </body>
 
 </html>

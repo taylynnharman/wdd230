@@ -1,83 +1,93 @@
-{"rentals": [
-    {
-        "vehicle": "Honda Metro Scooter",
-        "persons": "1",
-        "image": "images/honda-metro.webp",
-        "reservation": [
-            {
-                "title":"Half Day (3 hrs)",
-                "price": "$20"
-            },
-            {
-                "title":"Full Day",
-                "price": "$30"
-            }
-        ],
-        "walkin": [
-            {
-                "title":"Half Day (3 hrs)",
-                "price": "$25"
-            },
-            {
-                "title":"Full Day",
-                "price": "$35"
-            }
-        ]
-    },
-    {
-        "vehicle": "Honda Dio Scooter",
-        "persons": "2",
-        "image": "images/honda-dio.webp",
-        "reservation": [
-            {
-                "title":"Half Day (3 hrs)",
-                "price": "$30"
-            },
-            {
-                "title":"Full Day",
-                "price": "$40"
-            }
-        ],
-        "walkin": [
-            {
-                "title":"Half Day (3 hrs)",
-                "price": "$35"
-            },
-            {
-                "title":"Full Day",
-                "price": "$45"
-            }
-        ]
-    },
-    {
-        "vehicle": "Honda PCX150 Scooter",
-        "persons": "2",
-        "image": "images/honda-pcx150.webp",
-        "reservation": [
-            {
-                "title":"Half Day (3 hrs)",
-                "price": "$40"
-            },
-            {
-                "title":"Full Day",
-                "price": "$50"
-            }
-        ],
-        "walkin": [
-            {
-                "title":"Half Day (3 hrs)",
-                "price": "$45"
-            },
-            {
-                "title":"Full Day",
-                "price": "$55"
-            }
-        ]
-    },
+{"rentals": [{
+    "rentalType": "Scooter",
+    "vehicles": [
+        {
+            "vehicle": "Honda Metro Scooter",
+            "persons": "1",
+            "image": "images/honda-metro.webp",
+            "summary": "Compact and efficient, perfect for solo rides in the city.",
+            "reservation": [
+                {
+                    "title": "Half Day (3 hrs)",
+                    "price": "$20"
+                },
+                {
+                    "title": "Full Day",
+                    "price": "$30"
+                }
+            ],
+            "walkin": [
+                {
+                    "title": "Half Day (3 hrs)",
+                    "price": "$25"
+                },
+                {
+                    "title": "Full Day",
+                    "price": "$35"
+                }
+            ]
+        },
+        {
+            "vehicle": "Honda Dio Scooter",
+            "persons": "2",
+            "image": "images/honda-dio.webp",
+            "summary": "Stylish and powerful, ideal for two-person urban adventures.",
+            "reservation": [
+                {
+                    "title": "Half Day (3 hrs)",
+                    "price": "$30"
+                },
+                {
+                    "title": "Full Day",
+                    "price": "$40"
+                }
+            ],
+            "walkin": [
+                {
+                    "title": "Half Day (3 hrs)",
+                    "price": "$35"
+                },
+                {
+                    "title": "Full Day",
+                    "price": "$45"
+                }
+            ]
+        },
+        {
+            "vehicle": "Honda PCX150 Scooter",
+            "persons": "2",
+            "image": "images/honda-pcx150.webp",
+            "summary": "Sleek design, powerful performance, and comfortable for two riders.",
+            "reservation": [
+                {
+                    "title": "Half Day (3 hrs)",
+                    "price": "$40"
+                },
+                {
+                    "title": "Full Day",
+                    "price": "$50"
+                }
+            ],
+            "walkin": [
+                {
+                    "title": "Half Day (3 hrs)",
+                    "price": "$45"
+                },
+                {
+                    "title": "Full Day",
+                    "price": "$55"
+                }
+            ]
+        }
+    ]
+},
+    {"rentalType": "ATVs",
+    "vehicles": [
     {
         "vehicle": "Honda Pioneer ATV",
         "persons": "4",
         "image": "images/honda-pioneer.webp",
+        "summary": "Versatile 4-person side-by-side ATV, conquering trails and terrains.",
         "reservation": [
             {
                 "title":"Half Day (3 hrs)",
@@ -103,6 +113,7 @@
         "vehicle": "Jeep Wrangler - 4 door with a/c",
         "persons": "5",
         "image": "images/jeep-4door.webp",
+        "summary": "Explore with confidence – rugged 2-door or spacious 4-door models for every adventure.",
         "reservation": [
             {
                 "title":"Half Day (3 hrs)",
@@ -123,11 +134,15 @@
                 "price": "$125"
             }
         ]
-    },
+    }]},
+
+    {"rentalType": "Jeeps",
+    "vehicles": [
     {
         "vehicle": "Jeep Wrangler - 2 door",
         "persons": "4",
         "image": "images/jeep-2door.webp",
+        "summary": "Explore with confidence – rugged 2-door or spacious 4-door models for every adventure.",
         "reservation": [
             {
                 "title":"Half Day (3 hrs)",
@@ -149,4 +164,4 @@
             }
         ]
     }
-]}
+]}]}
