@@ -135,6 +135,23 @@ footer {
     padding: 13px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
 /* reservations.html */
 .reservations p {
     font-size: 12px;
@@ -152,7 +169,7 @@ form {
     padding: 20px;
     text-align: left;
     border-radius: 8px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 input,
@@ -182,8 +199,6 @@ button.form {
 /* google map */
 iframe {
     width: 100%;
-    padding: 0;
-    margin-bottom: 45px;
 }
 
 
