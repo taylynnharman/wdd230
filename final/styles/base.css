@@ -141,7 +141,7 @@ footer {
     line-height: 2rem;
 }
 
-.contacts form {
+form {
     background: var(--primary-color);
     color: var(--text-color);
     padding: 20px;
@@ -151,7 +151,8 @@ footer {
 }
 
 input,
-textarea {
+textarea,
+button {
     width: -webkit-fill-available;
     border-radius: 8px;
     border: none;
@@ -159,10 +160,9 @@ textarea {
     margin-block: 10px;
 }
 
-#send {
+button {
     font-size: 20px;
     font-family: var(--heading-font);
-    margin-block: 20px;
     background: var(--secondary-color);
     color: var(--text-color);
     border-style: outset;

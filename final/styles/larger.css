@@ -35,12 +35,13 @@
 
     /* Contacts */
     .contacts p {
-        grid-column: 3/6;
+        grid-column: 7/11;
         margin-top: 115px;
+        margin-left: 45px;
     }
 
-    .contacts form {
-        grid-column: 7/12;
+    form {
+        grid-column: 2/7;
     }
 
     iframe {
