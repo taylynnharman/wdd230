@@ -50,34 +50,34 @@
             <form action="res-received.html" method="get">
 
                 <!-- Date and Period -->
-                <label for="rentalDate">Rental Date:</label>
+                <label for="rentalDate">Rental Date<span class="required">*</span>:</label>
                 <input type="date" id="rentalDate" name="rentalDate" required>
                 <br>
-                <label for="rentalPeriod">Rental Period:</label>
+                <label for="rentalPeriod">Rental Period<span class="required">*</span>:</label>
                 <select id="rentalPeriod" name="rentalPeriod" required>
                     <option value="halfDay">Half Day (3 hrs)</option>
                     <option value="fullDay">Full Day</option>
                 </select>
                 <br>
                 <!-- Rental Type and Number -->
-                <label for="rentalType">Rental Type:</label>
+                <label for="rentalType">Rental Type<span class="required">*</span>:</label>
                 <input type="text" id="rentalType" name="rentalType" required>
                 <br>
                 <label for="numberOfRentals">Number of Rentals:</label>
                 <input type="number" id="numberOfRentals" name="numberOfRentals" min="1" required>
                 <br>
                 <!-- Contact Information -->
-                <label for="phoneNumber">Phone Number:</label>
+                <label for="phoneNumber">Phone Number<span class="required">*</span>:</label>
                 <input type="tel" id="phoneNumber" name="phoneNumber" required>
                 <br>
-                <label for="fullName">Full Name:</label>
+                <label for="fullName">Full Name<span class="required">*</span>:</label>
                 <input type="text" id="fullName" name="fullName" required>
                 <br>
-                <label for="email">Email:</label>
+                <label for="email">Email<span class="required">*</span>:</label>
                 <input type="email" id="email" name="email" required>
                 <br>
                 <!-- Location Information -->
-                <label for="location">Home State or Country:</label>
+                <label for="location">Home State or Country<span class="required">*</span>:</label>
                 <input type="text" id="location" name="location" required>
                 <br>
                 <!-- Cruise Line and Special Accommodations -->

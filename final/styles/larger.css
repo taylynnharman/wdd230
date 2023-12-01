@@ -28,8 +28,8 @@
         grid-template-columns: repeat(12, 1fr);
     }
 
-    div.vehicle-card {
-        grid-column: 1/13;
+    .vehicle-card {
+        flex-direction: row;
     }
 
     /* contact.html and reservation.html */
