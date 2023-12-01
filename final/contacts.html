@@ -32,17 +32,19 @@
 
         </ul>
     </nav>
-    <main>
+    <main class="contacts">
         <h1>How can we help?</h1>
         <!-- Necessary Contact Info -->
-        <p>If you have concerns, comments, or questions, don't hesitate to reach out at (444) 333-6666 or
-            email us at info@scoots.com. You can also fill out a contact form to the right and we'll get back to you as
+        <p>If you have concerns, comments, or questions, don't hesitate to reach out to (444) 333-6666 or
+            email us at info@scoots.com. You can also fill out a contact form and we'll get back to you as
             soon as
             possible! Thanks!</p>
         <!-- Contact Form with Name, Email, Comment -->
         <form action="contacts-received.html" method="get">
-            <label>Name: <span class="required">*</span>
-                <input type="text" id="name" name="name" placeholder="John Doe">
+            <h2>Contact Us</h2>
+
+            <label>Name:
+                <input type="text" id="name" name="name" placeholder="Enter your name">
             </label>
             <br>
 
@@ -50,13 +52,17 @@
                 <input type="email" id="email" name="email" placeholder="john@example.com" required>
             </label>
             <br>
+
             <label>Comment<span class="required">*</span>
-                <input type="text" id="comment" name="comment" placeholder="Enter Text Here..." required>
+                <textarea id="comment" name="comment" placeholder="Enter Text Here..." required></textarea>
             </label>
             <br>
+
             <input id="send" type="submit" value="Send">
         </form>
         <!-- an embedded Google map showing the two locations on Cozumel, and -->
+        <iframe src="https://www.google.com/maps/d/embed?mid=1naa1m9RhgyOYFMKHM1NDSkjYZxcHHKc&ehbc=2E312F&noprof=1"
+            width="640" height="480"></iframe>
     </main>
     <footer>
         <p>(444) 333-6666 | info@scoots.com </p>

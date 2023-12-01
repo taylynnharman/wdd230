@@ -23,7 +23,28 @@
     }
 
     /* Main */
+    main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px;
+    }
+
     div.vehicle-card {
         grid-column: 1/13;
+    }
+
+    /* Contacts */
+    .contacts p {
+        grid-column: 3/6;
+        margin-top: 115px;
+    }
+
+    .contacts form {
+        grid-column: 7/12;
+    }
+
+    iframe {
+        grid-row: 3/4;
+        grid-column: 3/11;
     }
 }
