@@ -32,11 +32,28 @@
 
         </ul>
     </nav>
-    <img src="images/hero.jpeg" alt="beach in cozumel">
+
     <main class="home">
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                <img src="images/hero_large.webp" alt="beach in cozumel" width="1500" height="600">
+            </picture>
+            <a class="button" href="reservations.html" target="_self">
+                Make a Reservation
+            </a>
+        </div>
+
         <h2>Meet the Fleet</h2>
-        <button class="form" type="submit">Make a Reservation</button>
         <span id="summary"></span>
+        <a class="button" href="rentals.html" target="_self">
+            View All Vehicles
+        </a>
+
+        <picture>
+            <source srcset="images/weatherbackdrop-small.webp" media="(max-width: 500px)">
+            <img src="images/weatherbackdrop-large.webp" alt="beach in cozumel" width="1500" height="600">
+        </picture>
 
     </main>
     <footer>
@@ -66,12 +83,8 @@ include the following:
 
 Readily available navigation and contact information.
 
-Summary information about all the types of rentals.
-
 The current weather information, obtained from the free version of openweathermap.org.
 ✔️ Include at least the current temperature, current condition description, and humidity.
 ✔️ Include any weather alerts if available (applicable) from the government and display it as a closeable message at the
 top of the page.
 ✔️ Also display and label a one day forecast.
-
-The images and brief verbiage

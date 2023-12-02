@@ -16,7 +16,7 @@ getData();
 
 function createSummaryCard(rentalCategory) {
     const div = document.createElement('div');
-    div.classList.add('vehicle-card');
+    div.classList.add('summary-card');
   
     const h2 = document.createElement('h2');
     h2.textContent = rentalCategory.rentalType;

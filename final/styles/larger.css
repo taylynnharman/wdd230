@@ -35,6 +35,33 @@
 
     .home button {
         grid-column: 4/9;
+        width: max-content;
+    }
+
+    .hero-container {
+        grid-column: 1/13;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hero-container a {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .summary-card {
+        width: 100%;
+        height: auto;
+        margin-inline: 1em;
+        background: none;
+        color: var(--secondary-color);
+    }
+
+    .home span {
+        grid-column: 1/13;
+        display: flex;
     }
 
     /* rentals.html */
@@ -78,5 +105,11 @@
     img {
         grid-column: 1/13;
         z-index: -1;
+    }
+
+    button:hover,
+    .button:hover {
+        background: var(--text-color);
+        color: var(--primary-color);
     }
 }

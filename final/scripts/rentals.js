@@ -42,7 +42,7 @@ function createVehicleCard(vehicle) {
 
   const reserveButton = document.createElement('button');
   reserveButton.textContent = 'Reserve';
-  reserveButton.classList.add('form');
+  reserveButton.classList.add('button');
 
   // Add an event listener to the reserve button
   reserveButton.addEventListener('click', function () {

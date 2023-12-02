@@ -4,8 +4,12 @@
     --primary-color: #103B42;
     --secondary-color: #202020;
     --text-color: #FFFFFF;
-    --heading-font: "Cinzel", "PT Serif", "Lato";
-    --paragraph-font: "Fauna One", "Tahoma", "verdana";
+    --heading-font: "Cinzel",
+        "PT Serif",
+        "Lato";
+    --paragraph-font: "Fauna One",
+        "Tahoma",
+        "verdana";
 }
 
 html {
@@ -83,7 +87,7 @@ ul {
 
 /* Main */
 main {
-    padding-inline: 30px;
+    /* padding-inline: 30px; */
     flex-grow: 1;
 }
 
@@ -106,7 +110,7 @@ footer {
     background: var(--secondary-color);
     color: var(--text-color);
     padding: 10px;
-    margin-top: auto;
+    margin-top: 1em;
 }
 
 #copy {
@@ -127,11 +131,12 @@ footer {
 }
 
 /* rental.html */
-.vehicle-card {
+.vehicle-card,
+.summary-card {
     background: var(--primary-color);
     color: var(--text-color);
     height: fit-content;
-    margin-bottom: 45px;
+    margin-block: 1em;
     padding: 13px;
 }
 
@@ -174,7 +179,8 @@ form {
 
 input,
 textarea,
-button.form {
+button.form,
+a.button {
     width: -webkit-fill-available;
     border-radius: 8px;
     border: none;
@@ -183,12 +189,19 @@ button.form {
 }
 
 
-button.form {
+button.form,
+a.button {
     font-size: 20px;
     font-family: var(--heading-font);
     background: var(--secondary-color);
     color: var(--text-color);
     border-style: outset;
+}
+
+a.button {
+    background: var(--primary-color);
+    width: fit-content;
+    grid-column: 6/13;
 }
 
 .required {
@@ -211,6 +224,8 @@ iframe {
 
 }
 
+
 img {
     width: 100%;
+    height: auto;
 }
