@@ -100,6 +100,12 @@ a {
     color: white;
 }
 
+main.rental,
+main.contacts,
+main.reservations {
+    margin-inline: 1em;
+}
+
 a:hover,
 .fa:hover {
     color: #FAAC30;
@@ -130,11 +136,33 @@ footer {
     font-size: 20px;
 }
 
+/* index.html */
+.summary-card {
+    margin-inline: 25px;
+}
+
+/* Weather */
+#weather {
+    display: flex;
+    justify-content: right;
+    grid-column: 2 / 3;
+    align-items: center;
+    color: white;
+
+}
+
+#weatherdiv {
+    padding: 30px;
+    height: 300px;
+    width: 60%;
+    background: var(--primary-color);
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
 /* rental.html */
 .vehicle-card,
 .summary-card {
-    background: var(--primary-color);
-    color: var(--text-color);
     height: fit-content;
     margin-block: 1em;
     padding: 13px;

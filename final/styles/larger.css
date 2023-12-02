@@ -56,14 +56,21 @@
         height: auto;
         margin-inline: 1em;
         background: none;
-        color: var(--secondary-color);
+        color: var(--primary-color);
+        display: grid;
         grid-template-rows: 75px 250px 100px;
         place-items: center;
+        grid-template-columns: 1fr;
     }
 
     .home span {
         grid-column: 1/13;
         display: flex;
+    }
+
+    /* Weather */
+    .weather {
+        grid-column: 1/13;
     }
 
     /* rentals.html */

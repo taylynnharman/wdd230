@@ -3,7 +3,6 @@ const rentalsContainer = document.querySelector('#rentals');
 
 async function getData() {
   try {
-    console.log('calling');
     const response = await fetch(url);
     const data = await response.json();
     console.table(data.rentals);
@@ -12,7 +11,7 @@ async function getData() {
     console.error('Error fetching data:', error);
   }
 }
- 
+
 getData();
 
 function createVehicleCard(vehicle) {
@@ -50,6 +49,7 @@ function createVehicleCard(vehicle) {
     const rentalType = encodeURIComponent(vehicle.vehicle);
     window.location.href = `reservations.html?rentalType=${rentalType}`;
   });
+
   div.appendChild(image);
   div.appendChild(title);
   div.appendChild(persons);
@@ -60,12 +60,19 @@ function createVehicleCard(vehicle) {
   return div;
 }
 
-function displayVehicles(vehicles) {
-  rentalsContainer.innerHTML = ''; // Clear previous content
-
-  vehicles.forEach(vehicle => {
-    const vehicleCard = createVehicleCard(vehicle);
-    rentalsContainer.appendChild(vehicleCard);
+function displayVehicles(rentals) {
+  rentalsContainer.innerHTML = ''; 
+  rentals.forEach(rentalCategory => {
+        // Create a header to represent the rental type
+        const h2 = document.createElement('h2');
+        h2.textContent = rentalCategory.rentalType;
+        rentalsContainer.appendChild(h2);
+    // Assuming each rentalCategory has a 'vehicles' property
+    rentalCategory.vehicles.forEach(vehicle => {
+      const vehicleCard = createVehicleCard(vehicle);
+      if (vehicleCard) {
+        rentalsContainer.appendChild(vehicleCard);
+      }
+    });
   });
 }
-

@@ -1,5 +1,5 @@
 {"rentals": [{
-    "rentalType": "Scooter",
+    "rentalType": "Scooters",
     "vehicles": [
         {
             "vehicle": "Honda Metro Scooter",
@@ -109,6 +109,8 @@
             }
         ]
     },
+    {"rentalType": "Jeeps",
+    "vehicles": [
     {
         "vehicle": "Jeep Wrangler - 4 door with a/c",
         "persons": "5",
@@ -135,9 +137,6 @@
             }
         ]
     }]},
-
-    {"rentalType": "Jeeps",
-    "vehicles": [
     {
         "vehicle": "Jeep Wrangler - 2 door",
         "persons": "4",

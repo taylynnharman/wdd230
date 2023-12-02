@@ -18,6 +18,7 @@ function createSummaryCard(rentalCategory) {
     const div = document.createElement('div');
     div.classList.add('summary-card');
   
+    // Create a header to represent the rental type
     const h2 = document.createElement('h2');
     h2.textContent = rentalCategory.rentalType;
   
@@ -44,7 +45,7 @@ function createSummaryCard(rentalCategory) {
   }
 
 function displayVehicles(rentals) {
-    summaryContainer.innerHTML = ''; // Clear previous content
+    summaryContainer.innerHTML = ''; 
     rentals.forEach(rentalCategory => {
       const vehicleCard = createSummaryCard(rentalCategory);
       if (vehicleCard) {
