@@ -57,6 +57,8 @@
         margin-inline: 1em;
         background: none;
         color: var(--secondary-color);
+        grid-template-rows: 75px 250px 100px;
+        place-items: center;
     }
 
     .home span {
