@@ -118,32 +118,6 @@
             "rentalType": "Jeeps",
             "vehicles": [
                 {
-                    "vehicle": "Jeep Wrangler - 4 door with a/c",
-                    "persons": "5",
-                    "image": "images/jeep-4door.webp",
-                    "summary": "Explore with confidence – rugged 2-door or spacious 4-door models for every adventure.",
-                    "reservation": [
-                        {
-                            "title": "Half Day (3 hrs)",
-                            "price": "$70"
-                        },
-                        {
-                            "title": "Full Day",
-                            "price": "$100"
-                        }
-                    ],
-                    "walkin": [
-                        {
-                            "title": "Half Day (3 hrs)",
-                            "price": "$85"
-                        },
-                        {
-                            "title": "Full Day",
-                            "price": "$125"
-                        }
-                    ]
-                },
-                {
                     "vehicle": "Jeep Wrangler - 2 door",
                     "persons": "4",
                     "image": "images/jeep-2door.webp",
@@ -166,6 +140,32 @@
                         {
                             "title": "Full Day",
                             "price": "$90"
+                        }
+                    ]
+                },
+                {
+                    "vehicle": "Jeep Wrangler - 4 door with a/c",
+                    "persons": "5",
+                    "image": "images/jeep-4door.webp",
+                    "summary": "Explore with confidence – rugged 2-door or spacious 4-door models for every adventure.",
+                    "reservation": [
+                        {
+                            "title": "Half Day (3 hrs)",
+                            "price": "$70"
+                        },
+                        {
+                            "title": "Full Day",
+                            "price": "$100"
+                        }
+                    ],
+                    "walkin": [
+                        {
+                            "title": "Half Day (3 hrs)",
+                            "price": "$85"
+                        },
+                        {
+                            "title": "Full Day",
+                            "price": "$125"
                         }
                     ]
                 }
