@@ -218,7 +218,8 @@ a.button {
 
 
 button.form,
-a.button {
+a.button,
+.button {
     font-size: 20px;
     font-family: var(--heading-font);
     background: var(--secondary-color);
@@ -226,7 +227,8 @@ a.button {
     border-style: outset;
 }
 
-a.button {
+a.button,
+.button {
     background: var(--primary-color);
     width: fit-content;
     grid-column: 6/13;
