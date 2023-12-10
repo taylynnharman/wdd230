@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
-    <!-- <link rel="icon" href="images/favicon.ico"> -->
+    <link rel="icon" href="images/logo.svg">
     <title>Scoots - Homepage</title>
 </head>
 
@@ -34,6 +34,8 @@
     </nav>
 
     <main class="home">
+        <span id="banner">
+        </span>
         <div class="hero-container">
             <picture>
                 <source srcset="images/hero_small.webp" media="(max-width: 500px)">
@@ -49,14 +51,27 @@
         <a class="button" href="rentals.html" target="_self">
             View All Vehicles
         </a>
-        <div class="weather">
-            <picture>
-                <source srcset="images/weatherbackdrop-small.webp" media="(max-width: 500px)">
-                <img src="images/weatherbackdrop-large.webp" alt="beach in cozumel" width="1500" height="600"
-                    loading="lazy">
-            </picture>
-            <div id="weather"></div>
+
+        <h2>Our Rental Facilities</h2>
+        <div>
+            <h3>Terminal Puerta Maya</h3>
+            <img class="location" src="images/location1.jpeg" alt="Location in Terminal Puerta Maya" loading="lazy">
         </div>
+        <div>
+            <h3>Playa del Carmen-Cozumel</h3>
+            <img class="location" src="images/location2-opt.jpg" alt="Location in Playa del Carmen-Cozumel"
+                loading="lazy">
+        </div>
+        <img src="images/rental-location.jpeg" alt="Scoot's Facility" loading="lazy">
+        <picture>
+            <source srcset="images/weatherbackdrop-small.webp" media="(max-width: 500px)">
+            <img src="images/weatherbackdrop-large.webp" alt="beach in cozumel" width="1500" height="600"
+                loading="lazy">
+        </picture>
+
+
+        <h2>Weather</h2>
+        <div id="weather"></div>
 
     </main>
     <footer>
@@ -79,15 +94,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/summary.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/active.js"></script>
 </body>
 
 </html>
-<!--images of the island and rental facilities and must
-include the following:
-
-Readily available navigation.
-
-✔️ Include at least the current temperature, current condition description, and humidity.
-✔️ Include any weather alerts if available (applicable) from the government and display it as a closeable message at the
-top of the page.
-✔️ Also display and label a one day forecast. -->

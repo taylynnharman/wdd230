@@ -12,6 +12,8 @@
     }
 
     .navigation a {
+        font-size: larger;
+        font-weight: bolder;
         width: 150px;
         height: 35px;
         margin: 0px;
@@ -40,8 +42,8 @@
 
     .hero-container {
         grid-column: 1/13;
-        position: relative;
-        display: inline-block;
+        /* position: relative;
+        display: inline-block; */
     }
 
     .hero-container a {
@@ -69,8 +71,18 @@
     }
 
     /* Weather */
-    .weather {
-        grid-column: 1/13;
+
+    #weather {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+        grid-column: 2/12;
+        row-gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .forecast-card {
+        margin: auto;
+        width: 12rem;
     }
 
     /* rentals.html */

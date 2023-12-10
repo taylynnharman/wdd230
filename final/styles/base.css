@@ -3,6 +3,7 @@
 :root {
     --primary-color: #103B42;
     --secondary-color: #202020;
+    --accent-color: #7EB6BF;
     --text-color: #FFFFFF;
     --heading-font: "Cinzel",
         "PT Serif",
@@ -68,7 +69,7 @@ ul {
 }
 
 .navigation a {
-    margin: 15px;
+    padding: 15px;
     display: block;
     font-size: 14pt;
     font-family: var(--heading-font);
@@ -83,6 +84,11 @@ ul {
     background: var(--secondary-color);
     border-style: outset;
     border-color: #999999;
+}
+
+.active {
+    background: #7EB6BF;
+    color: var(--primary-color);
 }
 
 /* Main */
@@ -106,9 +112,33 @@ main.reservations {
     margin-inline: 1em;
 }
 
+#banner {
+    display: block;
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+#banner p {
+    font-size: small;
+    margin-block: 0.5em;
+}
+
+.hero-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-container a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 a:hover,
 .fa:hover {
-    color: #FAAC30;
+    color: var(--accent-color);
+    background: var(--text-color);
 }
 
 /* Footer */
@@ -141,26 +171,37 @@ footer {
     margin-inline: 25px;
 }
 
-/* Weather */
-#weather {
-    display: flex;
-    justify-content: right;
-    grid-column: 2 / 3;
-    align-items: center;
-    color: white;
-
+.location {
+    grid-column: span 6;
+    margin-inline: 1em;
 }
 
-#weatherdiv {
-    padding: 30px;
-    height: 300px;
-    width: 60%;
-    background: var(--primary-color);
-    font-size: 1.5em;
-    color: var(--text-color);
+.location img {
+    width: 100%;
+}
+
+/* Weather */
+#weather img {
+    height: 4rem;
+    width: auto;
+}
+
+.forecast-card {
+    color: white;
+    background: rgba(0.039, 0.231, 0.259, .7);
+    padding-block: 20px;
+    border-radius: 8px;
+    margin-block: 1rem;
+    width: 18rem;
+    margin-inline: auto;
 }
 
 /* rental.html */
+.vehicle-card img {
+    width: 200px;
+    height: auto;
+}
+
 .vehicle-card,
 .summary-card {
     height: fit-content;
@@ -193,6 +234,10 @@ th {
 /* contacts.html */
 .contacts p {
     line-height: 2rem;
+}
+
+b {
+    font-size: 13pt;
 }
 
 /* Forms */

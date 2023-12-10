@@ -4,10 +4,10 @@
             "rentalType": "Scooters",
             "vehicles": [
                 {
-                    "vehicle": "Honda Metro Scooter",
+                    "vehicle": "Honda Metro Scooter (49cc)",
                     "persons": "1",
                     "image": "images/honda-metro.webp",
-                    "summary": "Compact and efficient, perfect for solo rides in the city.",
+                    "summary": "Compact and efficient, perfect for rides in the city.",
                     "reservation": [
                         {
                             "title": "Half Day (3 hrs)",
@@ -30,7 +30,7 @@
                     ]
                 },
                 {
-                    "vehicle": "Honda Dio Scooter",
+                    "vehicle": "Honda Dio Scooter (110cc)",
                     "persons": "2",
                     "image": "images/honda-dio.webp",
                     "summary": "Stylish and powerful, ideal for two-person urban adventures.",
@@ -56,7 +56,7 @@
                     ]
                 },
                 {
-                    "vehicle": "Honda PCX150 Scooter",
+                    "vehicle": "Honda PCX150 Scooter (149cc)",
                     "persons": "2",
                     "image": "images/honda-pcx150.webp",
                     "summary": "Sleek design, powerful performance, and comfortable for two riders.",
@@ -87,7 +87,7 @@
             "rentalType": "ATVs",
             "vehicles": [
                 {
-                    "vehicle": "Honda Pioneer ATV",
+                    "vehicle": "Honda Pioneer 1000",
                     "persons": "4",
                     "image": "images/honda-pioneer.webp",
                     "summary": "Versatile 4-person side-by-side ATV, conquering trails and terrains.",
@@ -118,7 +118,7 @@
             "rentalType": "Jeeps",
             "vehicles": [
                 {
-                    "vehicle": "Jeep Wrangler - 2 door",
+                    "vehicle": "Jeep Wrangler - 2 door manual - open air",
                     "persons": "4",
                     "image": "images/jeep-2door.webp",
                     "summary": "Explore with confidence – rugged 2-door or spacious 4-door models for every adventure.",
@@ -144,7 +144,7 @@
                     ]
                 },
                 {
-                    "vehicle": "Jeep Wrangler - 4 door with a/c",
+                    "vehicle": "Jeep Wrangler - 4 door manual with a/c",
                     "persons": "5",
                     "image": "images/jeep-4door.webp",
                     "summary": "Explore with confidence – rugged 2-door or spacious 4-door models for every adventure.",
