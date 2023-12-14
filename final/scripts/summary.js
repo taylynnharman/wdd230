@@ -19,8 +19,8 @@ function createSummaryCard(rentalCategory) {
     div.classList.add('summary-card');
   
     // Create a header to represent the rental type
-    const h2 = document.createElement('h2');
-    h2.textContent = rentalCategory.rentalType;
+    const h3 = document.createElement('h3');
+    h3.textContent = rentalCategory.rentalType;
   
     const firstVehicle = rentalCategory.vehicles[0];
   
@@ -36,7 +36,7 @@ function createSummaryCard(rentalCategory) {
       summary.textContent = firstVehicle.summary;
 
   
-      div.appendChild(h2);
+      div.appendChild(h3);
       div.appendChild(image);
       div.appendChild(summary);
   

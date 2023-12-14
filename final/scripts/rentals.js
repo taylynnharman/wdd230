@@ -31,7 +31,7 @@ function createVehicleCard(vehicle) {
   image.width = '100';
   image.height = '200';
 
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.textContent = vehicle.vehicle;
   isMobileView();
   
@@ -56,13 +56,13 @@ function createVehicleCard(vehicle) {
 
   const reserveButton = document.createElement('button');
   reserveButton.textContent = 'Reserve';
-  reserveButton.classList.add('button');
+  reserveButton.classList.add('primary-button');
 
   // Add an event listener to the reserve button
   reserveButton.addEventListener('click', function () {
     // Navigate to reservations.html and pass the rental type as a query parameter
     const rentalType = encodeURIComponent(vehicle.vehicle);
-    window.location.href = `reservations.html?rentalType=${rentalType}`;
+    window.location.href = `reservations.html?rentalType=${rentalCategory.rentalType}`;
   });
 
   div.appendChild(image);

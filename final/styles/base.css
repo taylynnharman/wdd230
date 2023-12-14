@@ -28,6 +28,10 @@ body {
     font-family: var(--paragraph-font);
 }
 
+section {
+    margin-top: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +39,8 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+    padding-block: 2rem;
+    margin-block: 0;
 }
 
 /* Header */
@@ -87,8 +93,7 @@ ul {
 }
 
 .active {
-    background: #7EB6BF;
-    color: var(--primary-color);
+    border-bottom: 7px solid var(--text-color);
 }
 
 /* Main */
@@ -118,26 +123,60 @@ main.reservations {
     color: var(--text-color);
 }
 
+#closeBanner {
+    color: var(--text-color);
+    background: var(--secondary-color);
+    border-color: #acacac;
+}
+
 #banner p {
     font-size: small;
-    margin-block: 0.5em;
+    margin-block: 0em;
+    line-height: 2rem;
 }
 
-.hero-container {
-    position: relative;
-    display: inline-block;
+button.form,
+a.button,
+.button {
+    font-size: 20px;
+    border-style: outset;
 }
 
-.hero-container a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.primary-button,
+.sec-button {
+    grid-column: span 6;
+    line-height: 3.5rem;
+    width: 60%;
+    margin-inline: auto;
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 8px;
+    font-family: 'Cinzel';
+}
+
+.primary-button {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.primary-button:hover {
+    background: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.sec-button {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.sec-button:hover {
+    color: var(--primary-color);
+    background: var(--text-color);
 }
 
 a:hover,
 .fa:hover {
-    color: var(--accent-color);
+    color: var(--primary-color);
     background: var(--text-color);
 }
 
@@ -171,16 +210,30 @@ footer {
     margin-inline: 25px;
 }
 
-.location {
-    grid-column: span 6;
-    margin-inline: 1em;
+.location-card {
+    border: 10px solid var(--primary-color);
+    width: 90%;
+    box-shadow: 5px 5px 10px #161c1c;
 }
 
-.location img {
-    width: 100%;
+.msg {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding-bottom: 20px;
+    margin-top: 20px;
+    padding-inline: 10px;
+}
+
+a.msg {
+    background: var(--text-color);
+    color: var(--primary-color) !important;
 }
 
 /* Weather */
+#weather {
+    display: block;
+}
+
 #weather img {
     height: 4rem;
     width: auto;
@@ -196,17 +249,22 @@ footer {
     margin-inline: auto;
 }
 
+.contact {
+    position: relative;
+
+}
+
+.contact button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* rental.html */
 .vehicle-card img {
     width: 200px;
     height: auto;
-}
-
-.vehicle-card,
-.summary-card {
-    height: fit-content;
-    margin-block: 1em;
-    padding: 13px;
 }
 
 table {
@@ -228,7 +286,7 @@ th {
 
 /* reservations.html */
 .reservations p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* contacts.html */
@@ -251,32 +309,12 @@ form {
 }
 
 input,
-textarea,
-button.form,
-a.button {
+textarea {
     width: -webkit-fill-available;
     border-radius: 8px;
     border: none;
     padding: 13px;
     margin-block: 10px;
-}
-
-
-button.form,
-a.button,
-.button {
-    font-size: 20px;
-    font-family: var(--heading-font);
-    background: var(--secondary-color);
-    color: var(--text-color);
-    border-style: outset;
-}
-
-a.button,
-.button {
-    background: var(--primary-color);
-    width: fit-content;
-    grid-column: 6/13;
 }
 
 .required {
@@ -289,16 +327,13 @@ iframe {
     width: 100%;
 }
 
-
 .banner {
     color: var(--text-color);
     background-color: var(--secondary-color);
     font-size: small;
     margin: initial;
     line-height: 2.5;
-
 }
-
 
 img {
     width: 100%;
