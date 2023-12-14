@@ -267,6 +267,11 @@ a.msg {
     height: auto;
 }
 
+.vehicle-card {
+    margin-block: 2rem;
+    margin-inline: 2rem;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

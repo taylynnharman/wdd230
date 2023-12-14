@@ -1,11 +1,16 @@
 const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/final/data/prices.json";
 const rentalsContainer = document.querySelector('#rentals');
 
+// Check viewport
 function isMobileView() {
-  return window.innerWidth <= 600; 
+  const mediaQuery = window.matchMedia('(max-width: 600px)');
+  
+  if (mediaQuery.matches) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
-
 
 async function getData() {
   try {
@@ -20,7 +25,9 @@ async function getData() {
 
 getData();
 
-function createVehicleCard(vehicle) {
+
+if (isMobileView()) {
+function createVehicleCard(rentalCategory, vehicle) {
   const div = document.createElement('div');
   div.classList.add('vehicle-card');
 
@@ -33,26 +40,17 @@ function createVehicleCard(vehicle) {
 
   const title = document.createElement('h3');
   title.textContent = vehicle.vehicle;
-  isMobileView();
-  
-  if (isMobileView()) {
-    // Code for mobile view
-    console.log('Mobile view');
-  } else {
-    // Code for desktop view
-    console.log('Desktop view');
-  }
 
-  // const persons = document.createElement('p');
-  // persons.textContent = `Persons: ${vehicle.persons}`;
+  const persons = document.createElement('p');
+  persons.textContent = `Persons: ${vehicle.persons}`;
 
-  // const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
-  // const reservation = document.createElement('p');
-  // reservation.textContent = `Reservation Prices: ${reservationPrices}`;
+  const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
+  const reservation = document.createElement('p');
+  reservation.textContent = `Max Reservation Prices: ${reservationPrices}`;
 
-  // const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
-  // const walkin = document.createElement('p');
-  // walkin.textContent = `Walk-in Prices: ${walkinPrices}`;
+  const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
+  const walkin = document.createElement('p');
+  walkin.textContent = `Max Walk-in Prices: ${walkinPrices}`;
 
   const reserveButton = document.createElement('button');
   reserveButton.textContent = 'Reserve';
@@ -61,21 +59,123 @@ function createVehicleCard(vehicle) {
   // Add an event listener to the reserve button
   reserveButton.addEventListener('click', function () {
     // Navigate to reservations.html and pass the rental type as a query parameter
-    const rentalType = encodeURIComponent(vehicle.vehicle);
-    window.location.href = `reservations.html?rentalType=${rentalCategory.rentalType}`;
+    const rentalType = encodeURIComponent(rentalCategory.rentalType);
+    window.location.href = `reservations.html?rentalType=${rentalType}`;
+    console.log("rentaltype:", rentalType)
   });
 
   div.appendChild(image);
   div.appendChild(title);
-  // div.appendChild(persons);
-  // div.appendChild(reservation);
-  // div.appendChild(walkin);
+  div.appendChild(persons);
+  div.appendChild(reservation);
+  div.appendChild(walkin);
   div.appendChild(reserveButton);
 
   return div;
 }
+}
+
+else{
+  // function createVehicleCard(rentalCategory, vehicle) {
+  //   const div = document.createElement('div');
+  //   div.classList.add('table-card');
+    
+  //   const table = document.createElement('table');
+  //   table.classList.add('table');
+
+  //   // Create the table header
+  //   const thead = document.createElement('thead');
+  //   const headerRow = document.createElement('tr');
+  //   headerRow.textContent = rentalCategory
+
+  //   const image = document.createElement('img');
+  //   image.src = vehicle.image;
+  //   image.alt = `${vehicle.vehicle} Image`;
+  //   image.loading = 'lazy';
+  //   image.width = '100';
+  //   image.height = '200';
+  
+  //   const title = document.createElement('h3');
+  //   title.textContent = vehicle.vehicle;
+  
+  //   const persons = document.createElement('p');
+  //   persons.textContent = `Persons: ${vehicle.persons}`;
+  
+  //   const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
+  //   const reservation = document.createElement('p');
+  //   reservation.textContent = `Max Reservation Prices: ${reservationPrices}`;
+  
+  //   const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
+  //   const walkin = document.createElement('p');
+  //   walkin.textContent = `Max Walk-in Prices: ${walkinPrices}`;
+  
+  //   const reserveButton = document.createElement('button');
+  //   reserveButton.textContent = 'Reserve';
+  //   reserveButton.classList.add('primary-button');
+  
+  //   // Add an event listener to the reserve button
+  //   reserveButton.addEventListener('click', function () {
+  //     // Navigate to reservations.html and pass the rental type as a query parameter
+  //     const rentalType = encodeURIComponent(rentalCategory.rentalType);
+  //     window.location.href = `reservations.html?rentalType=${rentalType}`;
+  //     console.log("rentaltype:", rentalType)
+  //   });
+  
+  //   div.appendChild(image);
+  //   div.appendChild(title);
+  //   div.appendChild(persons);
+  //   div.appendChild(reservation);
+  //   div.appendChild(walkin);
+  //   div.appendChild(reserveButton);
+  
+  //   return div;
+  // }
+
+
+
+  // headerCells.forEach(cellText => {
+  //   const th = document.createElement('th');
+  //   th.textContent = cellText;
+  //   headerRow.appendChild(th);
+  // });
+
+  // thead.appendChild(headerRow);
+  // table.appendChild(thead);
+
+  // // Create the table body
+  // const tbody = document.createElement('tbody');
+  // vehicles.forEach(vehicle => {
+  //   const tr = document.createElement('tr');
+
+  //   const vehicleCell = document.createElement('td');
+  //   vehicleCell.textContent = vehicle.vehicle;
+  //   tr.appendChild(vehicleCell);
+
+  //   const personsCell = document.createElement('td');
+  //   personsCell.textContent = vehicle.persons;
+  //   tr.appendChild(personsCell);
+
+  //   const reservationCell = document.createElement('td');
+  //   const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
+  //   reservationCell.textContent = reservationPrices;
+  //   tr.appendChild(reservationCell);
+
+  //   const walkinCell = document.createElement('td');
+  //   const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
+  //   walkinCell.textContent = walkinPrices;
+  //   tr.appendChild(walkinCell);
+
+  //   tbody.appendChild(tr);
+  // });
+
+  // table.appendChild(tbody);
+
+  // return table;
+}
+
 
 function displayVehicles(rentals) {
+  isMobileView();
   rentalsContainer.innerHTML = ''; 
   rentals.forEach(rentalCategory => {
         // Create a header to represent the rental type
@@ -84,7 +184,7 @@ function displayVehicles(rentals) {
         rentalsContainer.appendChild(h2);
     // Assuming each rentalCategory has a 'vehicles' property
     rentalCategory.vehicles.forEach(vehicle => {
-      const vehicleCard = createVehicleCard(vehicle);
+      const vehicleCard = createVehicleCard(rentalCategory, vehicle);
       if (vehicleCard) {
         rentalsContainer.appendChild(vehicleCard);
       }
@@ -106,7 +206,6 @@ function displayVehicles(rentals) {
 
 // <h1>Max Rental Pricing</h1>
 
-// <table>
 //     <thead>
 //         <tr>
 //             <th>Rental Type</th>
