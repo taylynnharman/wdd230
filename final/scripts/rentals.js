@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/taylynnharman/wdd230/main/final/data/prices.json";
+const url = "../data/prices.json";
 const rentalsContainer = document.querySelector('#rentals');
 
 // Check viewport
@@ -75,7 +75,7 @@ function createVehicleCard(rentalCategory, vehicle) {
 }
 }
 
-else{
+else{}
   // function createVehicleCard(rentalCategory, vehicle) {
   //   const div = document.createElement('div');
   //   div.classList.add('table-card');
@@ -84,9 +84,12 @@ else{
   //   table.classList.add('table');
 
   //   // Create the table header
-  //   const thead = document.createElement('thead');
-  //   const headerRow = document.createElement('tr');
-  //   headerRow.textContent = rentalCategory
+    
+  //   for (const key in vehicle) {
+
+  //     const thead = document.createElement('thead');
+  //     const headerRow = document.createElement('tr');
+  //     headerRow.textContent = rentalCategory
 
   //   const image = document.createElement('img');
   //   image.src = vehicle.image;
@@ -133,45 +136,45 @@ else{
 
 
 
-  // headerCells.forEach(cellText => {
-  //   const th = document.createElement('th');
-  //   th.textContent = cellText;
-  //   headerRow.appendChild(th);
-  // });
+//   headerCells.forEach(cellText => {
+//     const th = document.createElement('th');
+//     th.textContent = cellText;
+//     headerRow.appendChild(th);
+//   });
 
-  // thead.appendChild(headerRow);
-  // table.appendChild(thead);
+//   thead.appendChild(headerRow);
+//   table.appendChild(thead);
 
-  // // Create the table body
-  // const tbody = document.createElement('tbody');
-  // vehicles.forEach(vehicle => {
-  //   const tr = document.createElement('tr');
+//   // Create the table body
+//   const tbody = document.createElement('tbody');
+//   vehicles.forEach(vehicle => {
+//     const tr = document.createElement('tr');
 
-  //   const vehicleCell = document.createElement('td');
-  //   vehicleCell.textContent = vehicle.vehicle;
-  //   tr.appendChild(vehicleCell);
+//     const vehicleCell = document.createElement('td');
+//     vehicleCell.textContent = vehicle.vehicle;
+//     tr.appendChild(vehicleCell);
 
-  //   const personsCell = document.createElement('td');
-  //   personsCell.textContent = vehicle.persons;
-  //   tr.appendChild(personsCell);
+//     const personsCell = document.createElement('td');
+//     personsCell.textContent = vehicle.persons;
+//     tr.appendChild(personsCell);
 
-  //   const reservationCell = document.createElement('td');
-  //   const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
-  //   reservationCell.textContent = reservationPrices;
-  //   tr.appendChild(reservationCell);
+//     const reservationCell = document.createElement('td');
+//     const reservationPrices = vehicle.reservation.map(option => `${option.title}: ${option.price}`).join(', ');
+//     reservationCell.textContent = reservationPrices;
+//     tr.appendChild(reservationCell);
 
-  //   const walkinCell = document.createElement('td');
-  //   const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
-  //   walkinCell.textContent = walkinPrices;
-  //   tr.appendChild(walkinCell);
+//     const walkinCell = document.createElement('td');
+//     const walkinPrices = vehicle.walkin.map(option => `${option.title}: ${option.price}`).join(', ');
+//     walkinCell.textContent = walkinPrices;
+//     tr.appendChild(walkinCell);
 
-  //   tbody.appendChild(tr);
-  // });
+//     tbody.appendChild(tr);
+//   });
 
-  // table.appendChild(tbody);
+//   table.appendChild(tbody);
 
-  // return table;
-}
+//   return table;
+// }
 
 
 function displayVehicles(rentals) {
